@@ -1,0 +1,54 @@
+# Atlas Solo — ayda bir upstream documenso/documenso kontrolü.
+# Yeni sürüm ya da bizdeki sürümü etkileyen güvenlik duyurusu varsa issue açar (sürüm notu özeti +
+# Atlas değişiklikleriyle deneme cherry-pick'i + yeni veritabanı göçü + yeni çevrilecek metin).
+# Aynı başlıkta açık issue varsa gövdesini günceller (yinelenen issue açmaz).
+# Zamanlanmış iş yalnız VARSAYILAN daldan koşar → depo varsayılan dalı güncel `atlas/<sürüm>-tr`
+# olmalı (ATLAS.md → "Upstream güncelleme", son adım).
+name: atlas-upstream-check
+
+on:
+  schedule:
+    - cron: '23 6 1 * *' # her ayın 1'i 06:23 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Upstream'i kontrol et
+        id: check
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git fetch --no-tags -q https://github.com/documenso/documenso.git '+refs/tags/*:refs/tags/*'
+          python3 scripts/atlas/upstream_check.py --out "$RUNNER_TEMP/rapor.md" | tee -a "$GITHUB_OUTPUT"
+          cat "$RUNNER_TEMP/rapor.md" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Issue aç / güncelle
+        if: steps.check.outputs.needed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TITLE: ${{ steps.check.outputs.title }}
+          SECURITY: ${{ steps.check.outputs.security }}
+        run: |
+          gh label create upstream-guncelleme --color 0e8a16 --description 'Upstream Documenso sürüm/güvenlik kontrolü' 2>/dev/null || true
+          gh label create guvenlik --color b60205 --description 'Güvenlik duyurusu' 2>/dev/null || true
+          labels=upstream-guncelleme
+          [ "$SECURITY" = "true" ] && labels="$labels,guvenlik"
+          existing="$(gh issue list --state open --label upstream-guncelleme --json number,title \
+            | jq -r --arg t "$TITLE" '.[] | select(.title == $t) | .number' | head -1)"
+          if [ -n "$existing" ]; then
+            gh issue edit "$existing" --body-file "$RUNNER_TEMP/rapor.md"
+            echo "Güncellendi: #$existing"
+          else
+            gh issue create --title "$TITLE" --label "$labels" --body-file "$RUNNER_TEMP/rapor.md"
+          fi
