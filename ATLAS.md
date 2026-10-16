@@ -32,8 +32,9 @@ Lisans: AGPL-3.0 (upstream) — bu depo herkese açık kaynak olarak durur (canl
   Supabase) → **yalnız `documenso` servisine dokun**, her zaman `--no-deps`.
 - `.env`: Documenso ayarları. `NEXT_PUBLIC_DISABLE_SIGNUP=true` — hesap açma kapalı; imza
   tamamlandı sayfasındaki "hesap aç" paneli görünmez (yedek: `.env.bak-2026-10-16-pre-disable-signup`).
-- Canlı (2026-10-16): `ghcr.io/makturk/documenso:atlas-b85c01246f17` (GHSA yaması + sertifika Türkçe +
-  çeviri ikinci kontrolü). Önceki: `atlas-309fa942672c`. Yedek: `/root/documenso-2026-10-16-pre-b85c012.dump`.
+- Canlı (2026-10-16, v2.20.0): `ghcr.io/makturk/documenso:atlas-f7139de41f00` — 2 göç uygulandı.
+  Önceki: `atlas-b85c01246f17` (v2.16.0; yalnız göç öncesi yedekle geri dönülür:
+  `/root/documenso-2026-10-16-pre-v2.20.0.dump`, `compose.yml.bak-2026-10-16-pre-v2.20.0`).
 - İlk Atlas öncesi imaj (v2.16.0, 2026-07-21 derlemesi):
   `documenso/documenso@sha256:945bd2c04306bd5d78def0c4ceafdffb6b0a106cd6a2543db5acda9a6424b2d9`
 
@@ -86,7 +87,13 @@ docker pull $IMG
 - Bilgisayardan: `ssh -L 3901:127.0.0.1:3901 root@166.1.94.181` → `http://localhost:3901`.
   Kontrol: gerçek bir imza bağlantısının yolu `/sign/<token>?lang=tr` (yalnız açıp bak, imzalama) →
   Türkçe + başlıkta firma adı; `curl -s -o /dev/null -w '%{http_code}' 'http://localhost:3901/admin/users.data?_routes=routes%2F_authenticated%2B%2Fadmin%2B%2Fusers._index'`
-  → 302 (girişsiz yönetici verisi yok); konteyner günlüğünde hata yok (`docker logs documenso-deneme`).
+  → 302 ya da 202 + gövde `["SingleFetchRedirect",…,"/signin","status",302,…]` (v2.20.0 böyle döner;
+  girişsiz yönetici verisi yok — gövdede e-posta adresi olmamalı); konteyner günlüğünde hata yok (`docker logs documenso-deneme`).
+- `.env.deneme`'de e-postayı da kapat (`NEXT_PRIVATE_SMTP_HOST=127.0.0.1`, `NEXT_PRIVATE_SMTP_PORT=1`) ve
+  `NEXT_PUBLIC_WEBAPP_URL`/`NEXT_PRIVATE_INTERNAL_WEBAPP_URL`'i `http://localhost:3901` yap; kopya DB'de
+  webhook'u kapat (`update "Webhook" set enabled=false`) — yoksa deneme gerçek müşteriye hatırlatma, Atlas'a olay
+  gönderebilir. İmza sayfasını görmek için kopyada bir alıcıyı `NOT_SIGNED` + belgeyi `PENDING` yapabilirsin.
+- Yerelde `npm ci` Playwright tarayıcı indirmesinde takılırsa: `PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1 npm ci`.
 - Bitince: `docker rm -f documenso-deneme documenso-deneme-db; rm -f /root/documenso-deneme.dump .env.deneme`
 
 **5. Canlıya al**:
