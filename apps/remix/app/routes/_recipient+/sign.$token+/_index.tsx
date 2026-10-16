@@ -51,6 +51,7 @@ import { EnvelopeSigningProvider } from '~/components/general/document-signing/e
 import { RecipientBranding } from '~/components/general/recipient-branding';
 import { useCspNonce } from '~/utils/nonce';
 import { superLoaderJson, useSuperLoaderData } from '~/utils/super-json-loader';
+import { withLangParam } from '~/utils/with-lang-param';
 
 import type { Route } from './+types/_index';
 
@@ -85,7 +86,7 @@ const handleV1Loader = async ({ params, request }: Route.LoaderArgs) => {
   const isRecipientsTurn = await getIsRecipientsTurnToSign({ token });
 
   if (!isRecipientsTurn) {
-    throw redirect(`/sign/${token}/waiting`);
+    throw redirect(withLangParam(request, `/sign/${token}/waiting`));
   }
 
   const allRecipients =
@@ -148,15 +149,15 @@ const handleV1Loader = async ({ params, request }: Route.LoaderArgs) => {
   const { documentMeta } = document;
 
   if (recipient.signingStatus === SigningStatus.REJECTED) {
-    throw redirect(`/sign/${token}/rejected`);
+    throw redirect(withLangParam(request, `/sign/${token}/rejected`));
   }
 
   if (isRecipientExpired(recipient)) {
-    throw redirect(`/sign/${token}/expired`);
+    throw redirect(withLangParam(request, `/sign/${token}/expired`));
   }
 
   if (document.status === DocumentStatus.COMPLETED || recipient.signingStatus === SigningStatus.SIGNED) {
-    throw redirect(documentMeta?.redirectUrl || `/sign/${token}/complete`);
+    throw redirect(documentMeta?.redirectUrl || withLangParam(request, `/sign/${token}/complete`));
   }
 
   const [recipientSignatures, settings] = await Promise.all([
@@ -224,7 +225,7 @@ const handleV2Loader = async ({ params, request }: Route.LoaderArgs) => {
   const { envelope, recipient, isCompleted, isRejected, isExpired, isRecipientsTurn } = envelopeForSigning;
 
   if (!isRecipientsTurn) {
-    throw redirect(`/sign/${token}/waiting`);
+    throw redirect(withLangParam(request, `/sign/${token}/waiting`));
   }
 
   const { derivedRecipientAccessAuth } = extractDocumentAuthMethods({
@@ -254,15 +255,15 @@ const handleV2Loader = async ({ params, request }: Route.LoaderArgs) => {
   }
 
   if (isRejected) {
-    throw redirect(`/sign/${token}/rejected`);
+    throw redirect(withLangParam(request, `/sign/${token}/rejected`));
   }
 
   if (isCompleted) {
-    throw redirect(envelope.documentMeta.redirectUrl || `/sign/${token}/complete`);
+    throw redirect(envelope.documentMeta.redirectUrl || withLangParam(request, `/sign/${token}/complete`));
   }
 
   if (isExpired) {
-    throw redirect(`/sign/${token}/expired`);
+    throw redirect(withLangParam(request, `/sign/${token}/expired`));
   }
 
   await viewedDocument({

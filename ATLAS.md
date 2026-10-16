@@ -9,7 +9,11 @@ Upstream: documenso/documenso **v2.20.0**. Değişiklikler (`atlas/v2.20.0-tr` d
    `scripts/atlas/untranslated.py` listeler.
 2. **`?lang=xx`**: imza bağlantısındaki dil parametresi çereze ve tarayıcı diline üstün gelir
    (`apps/remix/app/root.tsx` + sunucu çizimi `apps/remix/app/entry.server.tsx`). Atlas davet
-   e-postası bağlantıya müşterinin dilini ekler.
+   e-postası bağlantıya müşterinin dilini ekler. İmza sayfası loader'ının kendi yönlendirmeleri
+   (`/complete`, `/rejected`, `/expired`, `/waiting`; `sign.$token+/_index.tsx` + `waiting.tsx`)
+   parametreyi taşır (`apps/remix/app/utils/with-lang-param.ts`, yalnız desteklenen diller) —
+   yoksa yönlendirmede dil çerezi yazılmadığından zaten imzalanmış bağlantıyı yeniden açan müşteri
+   tamamlandı sayfasını İngilizce görüyordu. Gönderenin `redirectUrl`'ine dokunulmaz.
 3. **Gönderen firma adı**: belge `externalId` = `atlas-sender:<URI kodlu ad>` ise imza sayfası
    başlığı "<Firma> sizi bu belgeyi imzalamaya davet etti" olur
    (`document-signing-page-view-v1.tsx`). Tüm firmalar tek Documenso ekibinden gönderdiği için.

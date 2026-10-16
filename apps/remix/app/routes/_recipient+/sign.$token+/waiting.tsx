@@ -13,6 +13,7 @@ import { Link, redirect } from 'react-router';
 
 import { RecipientBranding } from '~/components/general/recipient-branding';
 import { useCspNonce } from '~/utils/nonce';
+import { withLangParam } from '~/utils/with-lang-param';
 
 import type { Route } from './+types/waiting';
 
@@ -35,7 +36,7 @@ export async function loader({ params, request }: Route.LoaderArgs) {
   }
 
   if (document.status === DocumentStatus.COMPLETED) {
-    throw redirect(`/sign/${token}/complete`);
+    throw redirect(withLangParam(request, `/sign/${token}/complete`));
   }
 
   let isOwnerOrTeamMember = false;
