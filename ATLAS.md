@@ -7,7 +7,8 @@ geri dönüş güvenli). Değişiklikler (`atlas/v2.16.0-tr` dalı):
    `packages/lib/translations/tr/web.po` — imza sayfası ve müşteriye görünen ~450 metin Türkçe,
    kalanlar İngilizce (en kopyası).
 2. **`?lang=xx`**: imza bağlantısındaki dil parametresi çereze ve tarayıcı diline üstün gelir
-   (`apps/remix/app/root.tsx`). Atlas davet e-postası bağlantıya müşterinin dilini ekler.
+   (`apps/remix/app/root.tsx` + sunucu çizimi `apps/remix/app/entry.server.tsx`). Atlas davet
+   e-postası bağlantıya müşterinin dilini ekler.
 3. **Gönderen firma adı**: belge `externalId` = `atlas-sender:<URI kodlu ad>` ise imza sayfası
    başlığı "<Firma> sizi bu belgeyi imzalamaya davet etti" olur
    (`document-signing-page-view-v1.tsx`). Tüm firmalar tek Documenso ekibinden gönderdiği için.

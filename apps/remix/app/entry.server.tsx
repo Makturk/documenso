@@ -24,6 +24,13 @@ export default async function handleRequest(
 ) {
   let language = await langCookie.parse(request.headers.get('cookie') ?? '');
 
+  // Atlas Solo: davet bağlantısındaki `?lang=xx` çereze ve tarayıcı diline üstün gelir
+  // (root.tsx loader ile aynı kural — sunucu çizimi de aynı dilde olsun).
+  const langParam = new URL(request.url).searchParams.get('lang');
+  if (langParam && APP_I18N_OPTIONS.supportedLangs.includes(langParam as typeof language)) {
+    language = langParam as typeof language;
+  }
+
   if (!APP_I18N_OPTIONS.supportedLangs.includes(language)) {
     language = extractLocaleData({ headers: request.headers }).lang;
   }
