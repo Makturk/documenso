@@ -212,7 +212,7 @@ export const resendDocument = async ({ id, userId, recipients, teamId, requestMe
       const { email, name } = recipient;
       const selfSigner = email === user.email;
 
-      const recipientActionVerb = i18n._(RECIPIENT_ROLES_DESCRIPTION[recipient.role].actionVerb).toLowerCase();
+      const recipientActionVerb = i18n._(RECIPIENT_ROLES_DESCRIPTION[recipient.role].actionVerb).toLocaleLowerCase(i18n.locale);
 
       let emailMessage = envelope.documentMeta.message || '';
       let emailSubject = i18n._(msg`Reminder: Please ${recipientActionVerb} this document`);

@@ -26,7 +26,7 @@ msgstr "\"{0}\" is not a valid email address."
 #. placeholder {1}: timezone || ''
 #: apps/remix/app/components/general/document-signing/document-signing-date-field.tsx
 msgid "\"{0}\" will appear on the document as it has a timezone of \"{1}\"."
-msgstr "“{0}” saat dilimi “{1}” olduğu için belgede bu şekilde görünecek."
+msgstr "“{0}”, saat dilimi “{1}” olduğu için belgede bu şekilde görünecek."
 
 #: packages/email/template-components/template-document-super-delete.tsx
 msgid "\"{documentName}\" has been deleted by an admin."
@@ -293,12 +293,12 @@ msgstr "{0} alanı"
 #. placeholder {1}: envelope.title
 #: packages/lib/jobs/definitions/emails/send-signing-email.handler.ts
 msgid "{0} has invited you to {recipientActionVerb} the document \"{1}\"."
-msgstr "{0} sizi “{1}” belgesini {recipientActionVerb} için davet etti."
+msgstr "{0} sizi “{1}” belgesi için davet etti (istenen işlem: {recipientActionVerb})."
 
 #. placeholder {0}: team.name
 #: packages/lib/jobs/definitions/emails/send-signing-email.handler.ts
 msgid "{0} invited you to {recipientActionVerb} a document"
-msgstr "{0} sizi bir belgeyi {recipientActionVerb} için davet etti"
+msgstr "{0} sizi bir belge için davet etti (istenen işlem: {recipientActionVerb})"
 
 #. placeholder {0}: remaining.documents
 #. placeholder {1}: quota.documents
@@ -396,7 +396,7 @@ msgstr "{inviterName} has removed you from the document<0/>\"{documentName}\""
 #. placeholder {1}: envelope.title
 #: packages/lib/jobs/definitions/emails/send-signing-email.handler.ts
 msgid "{inviterName} on behalf of \"{0}\" has invited you to {recipientActionVerb} the document \"{1}\"."
-msgstr "{inviterName}, “{0}” adına sizi “{1}” belgesini {recipientActionVerb} için davet etti."
+msgstr "{inviterName}, “{0}” adına sizi “{1}” belgesi için davet etti (istenen işlem: {recipientActionVerb})."
 
 #. placeholder {0}: _(actionVerb).toLowerCase()
 #: packages/email/template-components/template-document-invite.tsx
@@ -767,7 +767,7 @@ msgstr "<0>Full account access:</0> View all your profile information, settings,
 
 #: packages/ui/components/recipient/recipient-action-auth-select.tsx
 msgid "<0>Inherit authentication method</0> - Use the global action signing authentication method configured in the \"General Settings\" step"
-msgstr "<0>Kimlik doğrulama yöntemini devral</0> - “Genel Ayarlar” adımında yapılandırılan genel imza doğrulama yöntemini kullan"
+msgstr "<0>Kimlik doğrulama yöntemini devral</0> - “Genel Ayarlar” adımında yapılandırılan genel imza doğrulama yöntemi kullanılır"
 
 #: packages/ui/components/document/document-visibility-select.tsx
 msgid "<0>Managers and above</0> - Only managers and above can access and view the document"
@@ -962,7 +962,7 @@ msgstr "Belgelere erişebilen, onları açıp okuyabilen bir cihaz"
 
 #: packages/lib/jobs/definitions/emails/send-signing-email.handler.ts
 msgid "A document was created by your direct template that requires you to {recipientActionVerb} it."
-msgstr "Doğrudan şablonunuzla, sizin {recipientActionVerb} gereken bir belge oluşturuldu."
+msgstr "Doğrudan şablonunuzla, işleminizi bekleyen bir belge oluşturuldu (istenen işlem: {recipientActionVerb})."
 
 #: apps/remix/app/components/dialogs/template-use-dialog.tsx
 msgid "A draft document will be created"
@@ -2070,7 +2070,7 @@ msgstr "Onayla"
 #: apps/remix/app/components/general/document-signing/document-signing-page-view-v2.tsx
 #: packages/email/template-components/template-document-reminder.tsx
 msgid "Approve Document"
-msgstr "Belgeyi Onayla"
+msgstr "Belgeyi onayla"
 
 #: apps/remix/app/components/general/document/document-page-view-recipients.tsx
 msgid "Approved"
@@ -2171,7 +2171,7 @@ msgstr "Yardım et"
 #: apps/remix/app/components/general/document-signing/document-signing-page-view-v2.tsx
 #: packages/email/template-components/template-document-reminder.tsx
 msgid "Assist Document"
-msgstr "Belgede Yardım Et"
+msgstr "Belgede yardım et"
 
 #: apps/remix/app/components/embed/embed-document-signing-page-v1.tsx
 msgid "Assist with signing"
@@ -2680,7 +2680,7 @@ msgstr "Capabilities enabled for this organisation."
 #: packages/lib/constants/recipient-roles.ts
 msgctxt "Recipient role name"
 msgid "Cc"
-msgstr "Bilgi"
+msgstr "Bilgi alan"
 
 #: packages/lib/constants/recipient-roles.ts
 msgctxt "Recipient role action verb"
@@ -2729,7 +2729,7 @@ msgstr "Character limit"
 #: apps/remix/app/components/forms/editor/editor-field-text-form.tsx
 #: packages/ui/primitives/document-flow/field-items-advanced-settings/text-field.tsx
 msgid "Character Limit"
-msgstr "Karakter Sınırı"
+msgstr "Karakter sınırı"
 
 #: apps/remix/app/routes/_authenticated+/admin+/stats.tsx
 msgid "Charts"
@@ -2817,7 +2817,7 @@ msgstr "Clear selection"
 
 #: packages/ui/primitives/signature-pad/signature-pad-draw.tsx
 msgid "Clear Signature"
-msgstr "İmzayı Temizle"
+msgstr "İmzayı temizle"
 
 #: apps/remix/app/components/tables/settings-public-profile-templates-table.tsx
 msgid "Click here to get started"
@@ -2948,7 +2948,7 @@ msgstr "Completed At"
 #: packages/email/templates/document-completed.tsx
 #: packages/email/templates/document-self-signed.tsx
 msgid "Completed Document"
-msgstr "Tamamlanan Belge"
+msgstr "Tamamlanan belge"
 
 #: apps/remix/app/components/general/app-command-menu.tsx
 msgid "Completed documents"
@@ -3236,7 +3236,7 @@ msgstr "Copy"
 
 #: packages/ui/components/document/document-share-button.tsx
 msgid "Copy Link"
-msgstr "Bağlantıyı Kopyala"
+msgstr "Bağlantıyı kopyala"
 
 #: apps/remix/app/routes/_authenticated+/admin+/teams.$id.tsx
 msgid "Copy organisation ID"
@@ -4198,7 +4198,7 @@ msgstr "Document All"
 
 #: apps/remix/app/routes/_recipient+/sign.$token+/complete.tsx
 msgid "Document Approved"
-msgstr "Belge Onaylandı"
+msgstr "Belge onaylandı"
 
 #: apps/remix/app/components/dialogs/envelope-cancel-dialog.tsx
 #: apps/remix/app/components/general/document/document-status.tsx
@@ -4215,7 +4215,7 @@ msgstr "Belge iptal edildi"
 #: packages/lib/jobs/definitions/emails/send-document-deleted-emails.handler.ts
 #: packages/lib/server-only/admin/admin-super-delete-document.ts
 msgid "Document Cancelled"
-msgstr "Belge İptal Edildi"
+msgstr "Belge iptal edildi"
 
 #: apps/remix/app/components/general/admin-global-settings-section.tsx
 #: apps/remix/app/components/general/document/document-status.tsx
@@ -4236,7 +4236,7 @@ msgstr "Belge tamamlandı e-postası"
 
 #: apps/remix/app/components/embed/embed-document-completed.tsx
 msgid "Document Completed!"
-msgstr "Belge Tamamlandı!"
+msgstr "Belge tamamlandı!"
 
 #: apps/remix/app/utils/toast-error-messages.ts
 msgid "Document conversion is temporarily unavailable. Please try again shortly or upload a PDF."
@@ -4412,7 +4412,7 @@ msgstr "Belge reddedildi"
 #: apps/remix/app/routes/_recipient+/sign.$token+/rejected.tsx
 #: packages/email/template-components/template-document-rejected.tsx
 msgid "Document Rejected"
-msgstr "Belge Reddedildi"
+msgstr "Belge reddedildi"
 
 #: apps/remix/app/components/dialogs/envelope-rename-dialog.tsx
 msgid "Document Renamed"
@@ -4438,7 +4438,7 @@ msgstr "Document Settings"
 
 #: apps/remix/app/routes/_recipient+/sign.$token+/complete.tsx
 msgid "Document Signed"
-msgstr "Belge İmzalandı"
+msgstr "Belge imzalandı"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
@@ -4508,7 +4508,7 @@ msgstr "Belge görüntülendi"
 
 #: apps/remix/app/routes/_recipient+/sign.$token+/complete.tsx
 msgid "Document Viewed"
-msgstr "Belge Görüntülendi"
+msgstr "Belge görüntülendi"
 
 #: apps/remix/app/components/general/admin-global-settings-section.tsx
 #: apps/remix/app/components/general/envelope-editor/envelope-editor-settings-dialog.tsx
@@ -5843,7 +5843,7 @@ msgstr "Folder updated successfully"
 #: packages/ui/primitives/document-flow/field-items-advanced-settings/number-field.tsx
 #: packages/ui/primitives/document-flow/field-items-advanced-settings/text-field.tsx
 msgid "Font Size"
-msgstr "Yazı Boyutu"
+msgstr "Yazı boyutu"
 
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "For any questions regarding this disclosure, electronic signatures, or any related process, please contact us at: <0>{SUPPORT_EMAIL}</0>"
@@ -5898,7 +5898,7 @@ msgstr "Free (Pending)"
 #: packages/lib/utils/fields.ts
 #: packages/ui/primitives/document-flow/types.ts
 msgid "Free Signature"
-msgstr "Serbest İmza"
+msgstr "Serbest imza"
 
 #: apps/remix/app/components/general/envelope-editor/envelope-editor-fields-page.tsx
 msgid "Free Signature Settings"
@@ -5987,7 +5987,7 @@ msgstr "Go back"
 #: apps/remix/app/routes/_recipient+/_layout.tsx
 #: packages/ui/primitives/document-flow/document-flow-root.tsx
 msgid "Go Back"
-msgstr "Geri Dön"
+msgstr "Geri dön"
 
 #: apps/remix/app/routes/_unauthenticated+/verify-email._index.tsx
 #: apps/remix/app/routes/_unauthenticated+/verify-email.$token.tsx
@@ -6000,7 +6000,7 @@ msgstr "Go back home"
 #: apps/remix/app/routes/_recipient+/sign.$token+/_index.tsx
 #: apps/remix/app/routes/_recipient+/sign.$token+/complete.tsx
 msgid "Go Back Home"
-msgstr "Ana Sayfaya Dön"
+msgstr "Ana sayfaya dön"
 
 #: apps/remix/app/routes/_authenticated+/_layout.tsx
 #: apps/remix/app/routes/_authenticated+/t.$teamUrl+/documents.$id.edit.tsx
@@ -6215,11 +6215,11 @@ msgstr "Bu belgenin imzacısıyım"
 
 #: packages/lib/constants/recipient-roles.ts
 msgid "I am a viewer of this document"
-msgstr "Bu belgenin görüntüleyicisiyim"
+msgstr "Bu belgeyi görüntüleyen kişiyim"
 
 #: packages/lib/constants/recipient-roles.ts
 msgid "I am an approver of this document"
-msgstr "Bu belgenin onaylayıcısıyım"
+msgstr "Bu belgeyi onaylayan kişiyim"
 
 #: packages/lib/constants/recipient-roles.ts
 msgid "I am an assistant of this document"
@@ -7055,7 +7055,7 @@ msgstr "Görüntülendi olarak işaretle"
 #: apps/remix/app/components/general/document-signing/document-signing-complete-dialog.tsx
 #: apps/remix/app/components/general/document-signing/document-signing-complete-dialog.tsx
 msgid "Mark as Viewed"
-msgstr "Görüntülendi Olarak İşaretle"
+msgstr "Görüntülendi olarak işaretle"
 
 #: apps/remix/app/routes/_authenticated+/admin+/stats.tsx
 msgid "MAU (created document)"
@@ -7361,15 +7361,15 @@ msgstr "İleri"
 
 #: apps/remix/app/components/general/document-signing/document-signing-complete-dialog.tsx
 msgid "Next Field"
-msgstr "Sonraki Alan"
+msgstr "Sonraki alan"
 
 #: apps/remix/app/components/general/document-signing/document-signing-complete-dialog.tsx
 msgid "Next Recipient Email"
-msgstr "Sonraki Alıcının E-postası"
+msgstr "Sonraki alıcının e-postası"
 
 #: apps/remix/app/components/general/document-signing/document-signing-complete-dialog.tsx
 msgid "Next Recipient Name"
-msgstr "Sonraki Alıcının Adı"
+msgstr "Sonraki alıcının adı"
 
 #: apps/remix/app/components/forms/branding-preferences-form.tsx
 #: apps/remix/app/components/forms/document-preferences-form.tsx
@@ -8250,15 +8250,15 @@ msgstr "Please {action} your document {documentName}"
 
 #: packages/lib/jobs/definitions/emails/send-signing-email.handler.ts
 msgid "Please {recipientActionVerb} this document"
-msgstr "Lütfen bu belgeyi {recipientActionVerb}"
+msgstr "Lütfen bu belgedeki işleminizi tamamlayın (istenen işlem: {recipientActionVerb})"
 
 #: packages/lib/jobs/definitions/emails/send-signing-email.handler.ts
 msgid "Please {recipientActionVerb} this document created by your direct template"
-msgstr "Lütfen doğrudan şablonunuzla oluşturulan bu belgeyi {recipientActionVerb}"
+msgstr "Lütfen doğrudan şablonunuzla oluşturulan bu belgedeki işleminizi tamamlayın (istenen işlem: {recipientActionVerb})"
 
 #: packages/lib/jobs/definitions/emails/send-signing-email.handler.ts
 msgid "Please {recipientActionVerb} your document"
-msgstr "Lütfen belgenizi {recipientActionVerb}"
+msgstr "Lütfen belgenizdeki işleminizi tamamlayın (istenen işlem: {recipientActionVerb})"
 
 #: apps/remix/app/components/dialogs/organisation-member-invite-dialog.tsx
 msgid "Please check the CSV file and make sure it is according to our format"
@@ -8659,7 +8659,7 @@ msgstr "Salt okunur"
 #: apps/remix/app/components/forms/editor/editor-field-generic-field-forms.tsx
 #: packages/ui/components/document/envelope-recipient-field-tooltip.tsx
 msgid "Read Only"
-msgstr "Salt Okunur"
+msgstr "Salt okunur"
 
 #: apps/remix/app/routes/_authenticated+/o.$orgUrl.support.tsx
 msgid "Read our documentation to get started with Documenso."
@@ -8943,7 +8943,7 @@ msgstr "Redirecting to {0}..."
 #: apps/remix/app/components/forms/signup.tsx
 #: apps/remix/app/components/general/claim-account.tsx
 msgid "Registration Successful"
-msgstr "Kayıt Başarılı"
+msgstr "Kayıt başarılı"
 
 #: apps/remix/app/components/general/envelope-signing/envelope-signer-header.tsx
 msgid "Reject"
@@ -8954,7 +8954,7 @@ msgstr "Reddet"
 #: apps/remix/app/components/general/document-signing/document-signing-reject-dialog.tsx
 #: apps/remix/app/components/general/document-signing/document-signing-reject-dialog.tsx
 msgid "Reject Document"
-msgstr "Belgeyi Reddet"
+msgstr "Belgeyi reddet"
 
 #: apps/remix/app/components/embed/multisign/multi-sign-document-list.tsx
 #: apps/remix/app/components/general/document/document-page-view-recipients.tsx
@@ -8998,7 +8998,7 @@ msgstr "Hatırlatma: {0}"
 #: packages/lib/jobs/definitions/internal/process-signing-reminder.handler.ts
 #: packages/lib/server-only/document/resend-document.ts
 msgid "Reminder: {0} invited you to {recipientActionVerb} a document"
-msgstr "Hatırlatma: {0} sizi bir belgeyi {recipientActionVerb} için davet etti"
+msgstr "Hatırlatma: {0} sizi bir belge için davet etti (istenen işlem: {recipientActionVerb})"
 
 #. placeholder {0}: _(actionVerb).toLowerCase()
 #: packages/email/template-components/template-document-reminder.tsx
@@ -9008,7 +9008,7 @@ msgstr "Reminder: Please {0} your document<0/>\"{documentName}\""
 #. placeholder {0}: envelope.title
 #: packages/lib/jobs/definitions/internal/process-signing-reminder.handler.ts
 msgid "Reminder: Please {recipientActionVerb} the document \"{0}\""
-msgstr "Hatırlatma: Lütfen “{0}” belgesini {recipientActionVerb}"
+msgstr "Hatırlatma: Lütfen “{0}” belgesindeki işleminizi tamamlayın (istenen işlem: {recipientActionVerb})"
 
 #: packages/lib/server-only/document/resend-document.ts
 msgid "Reminder: Please {recipientActionVerb} this document"
@@ -9310,7 +9310,7 @@ msgstr "Geri dön"
 #: apps/remix/app/routes/_recipient+/sign.$token+/rejected.tsx
 #: apps/remix/app/routes/_recipient+/sign.$token+/waiting.tsx
 msgid "Return Home"
-msgstr "Ana Sayfaya Dön"
+msgstr "Ana sayfaya dön"
 
 #: apps/remix/app/routes/_unauthenticated+/o.$orgUrl.signin.tsx
 msgid "Return to Documenso sign in page here"
@@ -9650,7 +9650,7 @@ msgstr "Select members to add to this team"
 
 #: packages/lib/utils/fields.ts
 msgid "Select Option"
-msgstr "Seçenek Seçin"
+msgstr "Seçenek seçin"
 
 #: apps/remix/app/components/dialogs/sign-field-checkbox-dialog.tsx
 msgid "Select Options"
@@ -9970,7 +9970,7 @@ msgstr "İmzala"
 #. placeholder {1}: recipient.email
 #: apps/remix/app/components/general/document-signing/document-signing-signature-field.tsx
 msgid "Sign as {0} <0>({1})</0>"
-msgstr "{0} olarak imzala <0>({1})</0>"
+msgstr "{0} <0>({1})</0> olarak imzala"
 
 #. placeholder {0}: recipient.name
 #. placeholder {1}: recipient.email
@@ -9989,7 +9989,7 @@ msgstr "Belgeyi imzala"
 #: apps/remix/app/components/general/document-signing/document-signing-page-view-v2.tsx
 #: packages/email/template-components/template-document-reminder.tsx
 msgid "Sign Document"
-msgstr "Belgeyi İmzala"
+msgstr "Belgeyi imzala"
 
 #: apps/remix/app/routes/_recipient+/_layout.tsx
 msgid "Sign Document - Documenso"
@@ -10168,11 +10168,11 @@ msgstr "İmza sertifikasını sağlayan"
 #: packages/lib/jobs/definitions/emails/send-document-completed-emails.handler.ts
 #: packages/lib/jobs/definitions/emails/send-document-completed-emails.handler.ts
 msgid "Signing Complete!"
-msgstr "İmza Tamamlandı!"
+msgstr "İmza tamamlandı!"
 
 #: apps/remix/app/routes/_recipient+/sign.$token+/expired.tsx
 msgid "Signing Deadline Expired"
-msgstr "İmza Süresi Doldu"
+msgstr "İmza süresi doldu"
 
 #: apps/remix/app/components/general/document-signing/csc-recipient-signing-in-progress-page.tsx
 msgid "Signing failed"
@@ -10212,7 +10212,7 @@ msgstr "Signing Status"
 
 #: apps/remix/app/components/embed/embed-recipient-expired.tsx
 msgid "Signing Window Expired"
-msgstr "İmza Süresi Doldu"
+msgstr "İmza süresi doldu"
 
 #. placeholder {0}: recipient.name || recipient.email
 #. placeholder {1}: envelope.title
@@ -11014,7 +11014,7 @@ msgstr "Metin"
 #: packages/ui/primitives/document-flow/field-items-advanced-settings/number-field.tsx
 #: packages/ui/primitives/document-flow/field-items-advanced-settings/text-field.tsx
 msgid "Text Align"
-msgstr "Metin Hizalama"
+msgstr "Metin hizalama"
 
 #: apps/remix/app/components/general/admin-site-banner-section.tsx
 msgid "Text Color"
@@ -11789,19 +11789,19 @@ msgstr "This URL is already in use."
 
 #: packages/ui/components/document/document-email-checkboxes.tsx
 msgid "This will be sent to all recipients if a pending document has been deleted."
-msgstr "Bekleyen bir belge silinirse bu, tüm alıcılara gönderilir."
+msgstr "Bekleyen bir belge silinirse bu e-posta tüm alıcılara gönderilir."
 
 #: packages/ui/components/document/document-email-checkboxes.tsx
 msgid "This will be sent to all recipients once the document has been fully completed."
-msgstr "Belge tamamen tamamlandığında bu, tüm alıcılara gönderilir."
+msgstr "Belge tamamen tamamlandığında bu e-posta tüm alıcılara gönderilir."
 
 #: packages/ui/components/document/document-email-checkboxes.tsx
 msgid "This will be sent to the document owner once the document has been fully completed."
-msgstr "Belge tamamen tamamlandığında bu, belge sahibine gönderilir."
+msgstr "Belge tamamen tamamlandığında bu e-posta belge sahibine gönderilir."
 
 #: packages/ui/components/document/document-email-checkboxes.tsx
 msgid "This will be sent to the document owner when a recipient's signing window has expired."
-msgstr "Bir alıcının imza süresi dolduğunda bu, belge sahibine gönderilir."
+msgstr "Bir alıcının imza süresi dolduğunda bu e-posta belge sahibine gönderilir."
 
 #: apps/remix/app/components/tables/organisation-email-domains-table.tsx
 msgid "This will check and sync the status of all email domains for this organisation"
@@ -12574,7 +12574,7 @@ msgstr "Upload signature"
 
 #: packages/ui/primitives/signature-pad/signature-pad-upload.tsx
 msgid "Upload Signature"
-msgstr "İmza Yükle"
+msgstr "İmza yükle"
 
 #: apps/remix/app/components/general/envelope/envelope-drop-zone-wrapper.tsx
 #: packages/ui/primitives/document-upload-button.tsx
@@ -12746,7 +12746,7 @@ msgstr "Verification email sent successfully."
 
 #: apps/remix/app/components/general/document-signing/access-auth-2fa-form.tsx
 msgid "Verify & Complete"
-msgstr "Doğrula ve Tamamla"
+msgstr "Doğrula ve tamamla"
 
 #: apps/remix/app/components/dialogs/organisation-email-domain-records-dialog.tsx
 msgid "Verify Domain"
@@ -12871,7 +12871,7 @@ msgstr "View document"
 #: packages/ui/primitives/document-flow/add-subject.tsx
 #: packages/ui/primitives/document-flow/add-subject.tsx
 msgid "View Document"
-msgstr "Belgeyi Görüntüle"
+msgstr "Belgeyi görüntüle"
 
 #: packages/email/template-components/template-document-invite.tsx
 msgid "View Document to approve"
@@ -12992,7 +12992,7 @@ msgstr "Diğerlerinin imzalaması bekleniyor"
 #: apps/remix/app/components/embed/embed-document-waiting-for-turn.tsx
 #: apps/remix/app/routes/_recipient+/sign.$token+/waiting.tsx
 msgid "Waiting for Your Turn"
-msgstr "Sıranızı Bekliyorsunuz"
+msgstr "Sıranızı bekliyorsunuz"
 
 #: apps/remix/app/routes/_recipient+/sign.$token+/_index.tsx
 #: apps/remix/app/routes/_recipient+/sign.$token+/_index.tsx
@@ -13980,7 +13980,7 @@ msgstr "You have declined the invitation from <0>{0}</0> to join their organisat
 #: packages/lib/jobs/definitions/emails/send-signing-email.handler.ts
 #: packages/lib/server-only/document/resend-document.ts
 msgid "You have initiated the document {0} that requires you to {recipientActionVerb} it."
-msgstr "Sizin {recipientActionVerb} gereken {0} belgesini başlattınız."
+msgstr "İşleminizi gerektiren {0} belgesini başlattınız (istenen işlem: {recipientActionVerb})."
 
 #: apps/remix/app/routes/_authenticated+/t.$teamUrl+/settings.webhooks._index.tsx
 msgid "You have no webhooks yet. Your webhooks will be shown here once you create them."
@@ -14687,7 +14687,7 @@ msgstr "İmza sağlayıcınız bu hesap için kullanılabilir kimlik bilgisi dö
 
 #: apps/remix/app/components/embed/embed-recipient-expired.tsx
 msgid "Your signing window for this document has expired. Please contact the sender for a new invitation."
-msgstr "Bu belge için imza süreniz doldu. Yeni bir davet için lütfen göndereni arayın."
+msgstr "Bu belge için imza süreniz doldu. Yeni bir davet için lütfen gönderenle iletişime geçin."
 
 #: apps/remix/app/components/forms/support-ticket-form.tsx
 msgid "Your support request has been submitted. We'll get back to you soon!"

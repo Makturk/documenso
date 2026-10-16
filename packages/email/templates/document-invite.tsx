@@ -37,9 +37,9 @@ export const DocumentInviteEmailTemplate = ({
   organisationType,
   reportUrl,
 }: DocumentInviteEmailTemplateProps) => {
-  const { _ } = useLingui();
+  const { _, i18n } = useLingui();
 
-  const action = _(RECIPIENT_ROLES_DESCRIPTION[role].actionVerb).toLowerCase();
+  const action = _(RECIPIENT_ROLES_DESCRIPTION[role].actionVerb).toLocaleLowerCase(i18n.locale);
 
   let previewText = msg`${inviterName} has invited you to ${action} ${documentName}`;
 
