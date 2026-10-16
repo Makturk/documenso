@@ -51,6 +51,13 @@ export async function loader({ context, request }: Route.LoaderArgs) {
 
   let lang: SupportedLanguageCodes = await langCookie.parse(cookieHeader);
 
+  // Atlas Solo: davet bağlantısındaki `?lang=xx` (müşterinin e-posta dili) çereze ve tarayıcı
+  // diline üstün gelir — e-posta hangi dildeyse imza sayfası da o dilde açılır.
+  const langParam = new URL(request.url).searchParams.get('lang');
+  if (langParam && APP_I18N_OPTIONS.supportedLangs.includes(langParam as SupportedLanguageCodes)) {
+    lang = langParam as SupportedLanguageCodes;
+  }
+
   if (!APP_I18N_OPTIONS.supportedLangs.includes(lang)) {
     lang = extractLocaleData({ headers: request.headers }).lang;
   }

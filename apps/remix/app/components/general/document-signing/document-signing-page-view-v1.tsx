@@ -139,6 +139,17 @@ export const DocumentSigningPageViewV1 = ({
     senderEmail = document.team?.teamEmail?.email ? `(${document.team.teamEmail.email})` : '';
   }
 
+  // Atlas Solo: tüm firmalar tek Documenso ekibinden gönderiyor; belgeyi gönderen FİRMANIN adı
+  // `externalId` = "atlas-sender:<adı>" ile gelir. Varsa başlık "<Firma> sizi bu belgeyi
+  // imzalamaya davet etti" olur (ekip adı ve "on behalf of" gösterilmez).
+  const atlasSenderName = parseAtlasSenderName(document.externalId);
+  const showOnBehalfOf = includeSenderDetails && !atlasSenderName;
+
+  if (atlasSenderName) {
+    senderName = atlasSenderName;
+    senderEmail = '';
+  }
+
   const selectedSigner = allRecipients?.find((r) => r.id === selectedSignerId);
   const targetSigner = recipient.role === RecipientRole.ASSISTANT && selectedSigner ? selectedSigner : null;
 
@@ -197,7 +208,7 @@ export const DocumentSigningPageViewV1 = ({
             <span className="text-muted-foreground">
               {match(recipient.role)
                 .with(RecipientRole.VIEWER, () =>
-                  includeSenderDetails ? (
+                  showOnBehalfOf ? (
                     <Trans>
                       <span className="truncate" title={senderName}>
                         {senderName} {senderEmail}
@@ -214,7 +225,7 @@ export const DocumentSigningPageViewV1 = ({
                   ),
                 )
                 .with(RecipientRole.SIGNER, () =>
-                  includeSenderDetails ? (
+                  showOnBehalfOf ? (
                     <Trans>
                       <span className="truncate" title={senderName}>
                         {senderName} {senderEmail}
@@ -231,7 +242,7 @@ export const DocumentSigningPageViewV1 = ({
                   ),
                 )
                 .with(RecipientRole.APPROVER, () =>
-                  includeSenderDetails ? (
+                  showOnBehalfOf ? (
                     <Trans>
                       <span className="truncate" title={senderName}>
                         {senderName} {senderEmail}
@@ -248,7 +259,7 @@ export const DocumentSigningPageViewV1 = ({
                   ),
                 )
                 .with(RecipientRole.ASSISTANT, () =>
-                  includeSenderDetails ? (
+                  showOnBehalfOf ? (
                     <Trans>
                       <span className="truncate" title={senderName}>
                         {senderName} {senderEmail}
@@ -462,4 +473,20 @@ export const DocumentSigningPageViewV1 = ({
       </div>
     </DocumentSigningRecipientProvider>
   );
+};
+
+const ATLAS_SENDER_PREFIX = 'atlas-sender:';
+
+/** `externalId` "atlas-sender:<URI kodlu ad>" → gönderen firma adı (yoksa / bozuksa null). */
+const parseAtlasSenderName = (externalId: string | null | undefined): string | null => {
+  if (!externalId || !externalId.startsWith(ATLAS_SENDER_PREFIX)) {
+    return null;
+  }
+
+  try {
+    const name = decodeURIComponent(externalId.slice(ATLAS_SENDER_PREFIX.length)).trim();
+    return name ? name.slice(0, 120) : null;
+  } catch {
+    return null;
+  }
 };
