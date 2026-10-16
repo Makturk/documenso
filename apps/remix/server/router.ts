@@ -28,6 +28,7 @@ import { aiRoute } from './api/ai/route';
 import { downloadRoute } from './api/download/download';
 import { filesRoute } from './api/files/files';
 import { type AppContext, appContext } from './context';
+import { atlasAdminGuard } from './atlas-admin-guard';
 import { appMiddleware } from './middleware';
 import { securityHeadersMiddleware } from './security-headers';
 import { openApiTrpcServerHandler } from './trpc/hono-trpc-open-api';
@@ -75,6 +76,8 @@ app.use(securityHeadersMiddleware);
 /**
  * RR7 app middleware.
  */
+// Atlas: GHSA-3494-9j87-fj64 — /admin altı yalnız yöneticiye (atlas-admin-guard.ts).
+app.use('*', atlasAdminGuard);
 app.use('*', appMiddleware);
 app.use('*', requestId());
 app.use(async (c, next) => {

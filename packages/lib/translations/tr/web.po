@@ -349,7 +349,7 @@ msgstr "{amount, plural, one {Yıl} other {Yıl}}"
 #: apps/remix/app/components/tables/internal-audit-log-table.tsx
 #: packages/lib/server-only/pdf/render-audit-logs.ts
 msgid "{browserInfo} on {os}"
-msgstr "{browserInfo} on {os}"
+msgstr "{os} üzerinde {browserInfo}"
 
 #: apps/remix/app/components/general/document-signing/document-signing-text-field.tsx
 msgid "{charactersRemaining, plural, one {1 character remaining} other {{charactersRemaining} characters remaining}}"
@@ -433,7 +433,7 @@ msgstr "{recipientActionVerb} the document to complete the process."
 #: apps/remix/app/components/general/document/document-certificate-qr-view.tsx
 #: apps/remix/app/components/general/document/document-certificate-qr-view.tsx
 msgid "{recipientCount} recipients"
-msgstr "{recipientCount} recipients"
+msgstr "{recipientCount} alıcı"
 
 #: packages/email/templates/document-created-from-direct-template.tsx
 msgid "{recipientName} {action} a document by using one of your direct links"
@@ -488,173 +488,173 @@ msgstr "{teamName} has invited you to {action} {documentName}"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} added a field"
-msgstr "{user} added a field"
+msgstr "{user} bir alan ekledi"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} added a recipient"
-msgstr "{user} added a recipient"
+msgstr "{user} bir alıcı ekledi"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} approved the document"
-msgstr "{user} approved the document"
+msgstr "{user} belgeyi onayladı"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} authenticated with the signing provider"
-msgstr "{user} authenticated with the signing provider"
+msgstr "{user} imza sağlayıcısıyla kimliğini doğruladı"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} authorised the remote signature"
-msgstr "{user} authorised the remote signature"
+msgstr "{user} uzaktan imzayı onayladı"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} cancelled the document"
-msgstr "{user} cancelled the document"
+msgstr "{user} belgeyi iptal etti"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} CC'd the document"
-msgstr "{user} CC'd the document"
+msgstr "{user} belgenin bir kopyasını aldı"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} completed their task"
-msgstr "{user} completed their task"
+msgstr "{user} görevini tamamladı"
 
 #. placeholder {0}: data.envelopeItemTitle
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} created an envelope item with title {0}"
-msgstr "{user} created an envelope item with title {0}"
+msgstr "{user} {0} başlıklı bir zarf öğesi oluşturdu"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} created the document"
-msgstr "{user} created the document"
+msgstr "{user} belgeyi oluşturdu"
 
 #. placeholder {0}: data.envelopeItemTitle
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} deleted an envelope item with title {0}"
-msgstr "{user} deleted an envelope item with title {0}"
+msgstr "{user} {0} başlıklı zarf öğesini sildi"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} deleted the document"
-msgstr "{user} deleted the document"
+msgstr "{user} belgeyi sildi"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} failed to validate a 2FA token for the document"
-msgstr "{user} failed to validate a 2FA token for the document"
+msgstr "{user} belge için iki adımlı doğrulama kodunu doğrulayamadı"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} moved the document to team"
-msgstr "{user} moved the document to team"
+msgstr "{user} belgeyi ekibe taşıdı"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} opened the document"
-msgstr "{user} opened the document"
+msgstr "{user} belgeyi açtı"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} prefilled a field"
-msgstr "{user} prefilled a field"
+msgstr "{user} bir alanı önceden doldurdu"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} rejected the document"
-msgstr "{user} rejected the document"
+msgstr "{user} belgeyi reddetti"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} removed a field"
-msgstr "{user} removed a field"
+msgstr "{user} bir alanı kaldırdı"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} removed a recipient"
-msgstr "{user} removed a recipient"
+msgstr "{user} bir alıcıyı kaldırdı"
 
 #. placeholder {0}: data.envelopeItemTitle
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} replaced the PDF for envelope item {0}"
-msgstr "{user} replaced the PDF for envelope item {0}"
+msgstr "{user} {0} zarf öğesinin PDF'ini değiştirdi"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} requested a 2FA token for the document"
-msgstr "{user} requested a 2FA token for the document"
+msgstr "{user} belge için iki adımlı doğrulama kodu istedi"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} requested a remote signature"
-msgstr "{user} requested a remote signature"
+msgstr "{user} uzaktan imza istedi"
 
 #. placeholder {0}: data.recipientEmail
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} resent an email to {0}"
-msgstr "{user} resent an email to {0}"
+msgstr "{user} {0} adresine e-postayı yeniden gönderdi"
 
 #. placeholder {0}: data.recipientEmail
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} sent an email to {0}"
-msgstr "{user} sent an email to {0}"
+msgstr "{user} {0} adresine e-posta gönderdi"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} sent the document"
-msgstr "{user} sent the document"
+msgstr "{user} belgeyi gönderdi"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} signed a field"
-msgstr "{user} signed a field"
+msgstr "{user} bir alanı imzaladı"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} signed the document"
-msgstr "{user} signed the document"
+msgstr "{user} belgeyi imzaladı"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} unsigned a field"
-msgstr "{user} unsigned a field"
+msgstr "{user} bir alanın imzasını geri aldı"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} updated a field"
-msgstr "{user} updated a field"
+msgstr "{user} bir alanı güncelledi"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} updated a recipient"
-msgstr "{user} updated a recipient"
+msgstr "{user} bir alıcıyı güncelledi"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} updated an envelope item"
-msgstr "{user} updated an envelope item"
+msgstr "{user} bir zarf öğesini güncelledi"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} updated the document"
-msgstr "{user} updated the document"
+msgstr "{user} belgeyi güncelledi"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} updated the document access auth requirements"
-msgstr "{user} updated the document access auth requirements"
+msgstr "{user} belgenin erişim doğrulama koşullarını güncelledi"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} updated the document external ID"
-msgstr "{user} updated the document external ID"
+msgstr "{user} belgenin dış kimliğini güncelledi"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} updated the document signing auth requirements"
-msgstr "{user} updated the document signing auth requirements"
+msgstr "{user} belgenin imza doğrulama koşullarını güncelledi"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} updated the document title"
-msgstr "{user} updated the document title"
+msgstr "{user} belgenin başlığını güncelledi"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} updated the document visibility"
-msgstr "{user} updated the document visibility"
+msgstr "{user} belgenin görünürlüğünü güncelledi"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} validated a 2FA token for the document"
-msgstr "{user} validated a 2FA token for the document"
+msgstr "{user} belge için iki adımlı doğrulama kodunu doğruladı"
 
 #: packages/lib/utils/document-audit-logs.ts
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user} viewed the document"
-msgstr "{user} viewed the document"
+msgstr "{user} belgeyi görüntüledi"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user}'s remote signature was applied"
-msgstr "{user}'s remote signature was applied"
+msgstr "{user} adlı kişinin uzaktan imzası uygulandı"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "{user}'s signing provider authentication failed"
-msgstr "{user}'s signing provider authentication failed"
+msgstr "{user} adlı kişinin imza sağlayıcısı doğrulaması başarısız oldu"
 
 #: apps/remix/app/components/tables/internal-audit-log-table.tsx
 #: packages/lib/server-only/pdf/render-audit-logs.ts
@@ -855,7 +855,7 @@ msgstr "12 months"
 
 #: apps/remix/app/components/general/document-signing/document-signing-auth-dialog.tsx
 msgid "2FA"
-msgstr "2FA"
+msgstr "İki adımlı doğrulama"
 
 #: apps/remix/app/components/dialogs/admin-user-reset-two-factor-dialog.tsx
 msgid "2FA Reset"
@@ -958,7 +958,7 @@ msgstr "A confirmation email has been sent, and it should arrive in your inbox s
 
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "A device capable of accessing, opening, and reading documents"
-msgstr "A device capable of accessing, opening, and reading documents"
+msgstr "Belgelere erişebilen, onları açıp okuyabilen bir cihaz"
 
 #: packages/lib/jobs/definitions/emails/send-signing-email.handler.ts
 msgid "A document was created by your direct template that requires you to {recipientActionVerb} it."
@@ -971,21 +971,21 @@ msgstr "A draft document will be created"
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "A field was added"
-msgstr "A field was added"
+msgstr "Bir alan eklendi"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "A field was removed"
-msgstr "A field was removed"
+msgstr "Bir alan kaldırıldı"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "A field was updated"
-msgstr "A field was updated"
+msgstr "Bir alan güncellendi"
 
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "A means to print or download documents for your records"
-msgstr "A means to print or download documents for your records"
+msgstr "Belgeleri kayıtlarınız için yazdırma ya da indirme imkânı"
 
 #: packages/email/templates/organisation-join.tsx
 msgid "A member has joined your organisation on Documenso"
@@ -1023,17 +1023,17 @@ msgstr "A password reset email has been sent, if you have an account you should 
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "A recipient was added"
-msgstr "A recipient was added"
+msgstr "Bir alıcı eklendi"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "A recipient was removed"
-msgstr "A recipient was removed"
+msgstr "Bir alıcı kaldırıldı"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "A recipient was updated"
-msgstr "A recipient was updated"
+msgstr "Bir alıcı güncellendi"
 
 #: packages/email/templates/organisation-account-link-confirmation.tsx
 msgid "A request has been made to create an account for you"
@@ -1055,7 +1055,7 @@ msgstr "A secret that will be sent to your URL so you can verify that the reques
 
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "A stable internet connection"
-msgstr "A stable internet connection"
+msgstr "Kararlı bir internet bağlantısı"
 
 #: packages/email/templates/team-delete.tsx
 #: packages/email/templates/team-delete.tsx
@@ -1107,7 +1107,7 @@ msgstr "Accept team email request for {teamName} on Documenso"
 
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "Acceptance and Consent"
-msgstr "Acceptance and Consent"
+msgstr "Kabul ve Onay"
 
 #: apps/remix/app/components/dialogs/team-inherit-member-disable-dialog.tsx
 msgid "Access disabled"
@@ -1126,7 +1126,7 @@ msgstr "Hesap"
 #: apps/remix/app/routes/_internal+/[__htmltopdf]+/certificate.tsx
 #: packages/lib/server-only/pdf/generate-certificate-pdf.ts
 msgid "Account Authentication"
-msgstr "Account Authentication"
+msgstr "Hesap Doğrulaması"
 
 #: packages/email/templates/organisation-account-link-confirmation.tsx
 msgid "Account creation request"
@@ -1164,7 +1164,7 @@ msgstr "Account Linking Request"
 #: apps/remix/app/routes/_internal+/[__htmltopdf]+/certificate.tsx
 #: packages/lib/server-only/pdf/generate-certificate-pdf.ts
 msgid "Account Re-Authentication"
-msgstr "Account Re-Authentication"
+msgstr "Hesapla Yeniden Doğrulama"
 
 #: apps/remix/app/routes/_authenticated+/settings+/security.linked-accounts.tsx
 msgid "Account unlinked"
@@ -1172,7 +1172,7 @@ msgstr "Account unlinked"
 
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "Acknowledgment"
-msgstr "Acknowledgment"
+msgstr "Beyan"
 
 #: apps/remix/app/components/general/document/document-page-view-dropdown.tsx
 #: apps/remix/app/components/tables/admin-document-logs-table.tsx
@@ -1528,7 +1528,7 @@ msgstr "Advanced Settings"
 
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "After signing a document electronically, you will be provided the opportunity to view, download, and print the document for your records. It is highly recommended that you retain a copy of all electronically signed documents for your personal records. We will also retain a copy of the signed document for our records however we may not be able to provide you with a copy of the signed document after a certain period of time."
-msgstr "After signing a document electronically, you will be provided the opportunity to view, download, and print the document for your records. It is highly recommended that you retain a copy of all electronically signed documents for your personal records. We will also retain a copy of the signed document for our records however we may not be able to provide you with a copy of the signed document after a certain period of time."
+msgstr "Bir belgeyi elektronik olarak imzaladıktan sonra, kayıtlarınız için belgeyi görüntüleme, indirme ve yazdırma imkânı size sunulur. Elektronik olarak imzalanan tüm belgelerin bir kopyasını kendi kayıtlarınız için saklamanızı önemle tavsiye ederiz. İmzalanan belgenin bir kopyasını biz de kayıtlarımızda saklarız; ancak belirli bir süre geçtikten sonra imzalı belgenin kopyasını size sağlayamayabiliriz."
 
 #: packages/lib/constants/template.ts
 msgid "After submission, a document will be automatically generated and added to your documents page. You will also receive a notification via email."
@@ -1570,7 +1570,7 @@ msgstr "All documents have been processed. Any new documents that are sent or re
 
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "All documents related to the electronic signing process will be provided to you electronically through our platform or via email. It is your responsibility to ensure that your email address is current and that you can receive and open our emails."
-msgstr "All documents related to the electronic signing process will be provided to you electronically through our platform or via email. It is your responsibility to ensure that your email address is current and that you can receive and open our emails."
+msgstr "Elektronik imza süreciyle ilgili tüm belgeler size platformumuz üzerinden ya da e-posta ile elektronik olarak iletilir. E-posta adresinizin güncel olmasını ve e-postalarımızı alıp açabilmenizi sağlamak sizin sorumluluğunuzdadır."
 
 #: apps/remix/app/components/tables/organisation-email-domains-table.tsx
 msgid "All email domains have been synced successfully"
@@ -1684,11 +1684,11 @@ msgstr "An administrator has created a Documenso account for you."
 
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "An electronic signature provided by you on our platform, achieved through clicking through to a document and entering your name, or any other electronic signing method we provide, is legally binding. It carries the same weight and enforceability as a manual signature written with ink on paper."
-msgstr "An electronic signature provided by you on our platform, achieved through clicking through to a document and entering your name, or any other electronic signing method we provide, is legally binding. It carries the same weight and enforceability as a manual signature written with ink on paper."
+msgstr "Platformumuzda bir belgeye tıklayıp adınızı girerek ya da sunduğumuz başka bir elektronik imza yöntemiyle attığınız elektronik imza hukuken bağlayıcıdır. Kâğıt üzerine mürekkeple atılan el yazısı imzayla aynı ağırlığa ve uygulanabilirliğe sahiptir."
 
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "An email account"
-msgstr "An email account"
+msgstr "Bir e-posta hesabı"
 
 #: apps/remix/app/components/dialogs/organisation-member-invite-dialog.tsx
 msgid "An email containing an invitation will be sent to each member."
@@ -2248,7 +2248,7 @@ msgstr "Attempts sealing the document again, useful for after a code change has 
 #: apps/remix/app/routes/_internal+/[__htmltopdf]+/audit-log.tsx
 #: packages/lib/server-only/pdf/render-audit-logs.ts
 msgid "Audit Log"
-msgstr "Audit Log"
+msgstr "Denetim Kaydı"
 
 #: apps/remix/app/components/tables/admin-document-logs-table.tsx
 msgid "Audit Log Details"
@@ -2262,7 +2262,7 @@ msgstr "Audit Logs"
 #: apps/remix/app/routes/_internal+/[__htmltopdf]+/certificate.tsx
 #: packages/lib/server-only/pdf/render-certificate.ts
 msgid "Authentication Level"
-msgstr "Authentication Level"
+msgstr "Doğrulama Düzeyi"
 
 #: apps/remix/app/routes/_unauthenticated+/o.$orgUrl.signin.tsx
 msgid "Authentication Portal Not Found"
@@ -2304,7 +2304,7 @@ msgstr "Geri"
 
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "Back home"
-msgstr "Back home"
+msgstr "Ana sayfaya dön"
 
 #: apps/remix/app/components/forms/branding-preferences-form.tsx
 msgid "Background"
@@ -2506,7 +2506,7 @@ msgstr "2FA'yı etkinleştirdiğinizde, e-posta ve parolayla her girişte doğru
 
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "By proceeding to use the electronic signature service provided by Documenso, you affirm that you have read and understood this disclosure. You agree to all terms and conditions related to the use of electronic signatures and electronic transactions as outlined herein."
-msgstr "By proceeding to use the electronic signature service provided by Documenso, you affirm that you have read and understood this disclosure. You agree to all terms and conditions related to the use of electronic signatures and electronic transactions as outlined herein."
+msgstr "Documenso tarafından sağlanan elektronik imza hizmetini kullanmaya devam ederek bu bilgilendirmeyi okuyup anladığınızı beyan edersiniz. Burada açıklanan, elektronik imza ve elektronik işlemlerin kullanımına ilişkin tüm hüküm ve koşulları kabul etmiş olursunuz."
 
 #: apps/remix/app/components/general/document-signing/document-signing-disclosure.tsx
 msgid "By proceeding with your electronic signature, you acknowledge and consent that it will be used to sign the given document and holds the same legal validity as a handwritten signature. By completing the electronic signing process, you affirm your understanding and acceptance of these conditions."
@@ -2518,7 +2518,7 @@ msgstr "By proceeding, you agree to our <0>Terms of Service</0> and <1>Privacy P
 
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "By using the electronic signature feature, you are consenting to conduct transactions and receive disclosures electronically. You acknowledge that your electronic signature on documents is binding and that you accept the terms outlined in the documents you are signing."
-msgstr "By using the electronic signature feature, you are consenting to conduct transactions and receive disclosures electronically. You acknowledge that your electronic signature on documents is binding and that you accept the terms outlined in the documents you are signing."
+msgstr "Elektronik imza özelliğini kullanarak işlemleri elektronik ortamda yürütmeyi ve bilgilendirmeleri elektronik olarak almayı kabul etmiş olursunuz. Belgeler üzerindeki elektronik imzanızın bağlayıcı olduğunu ve imzaladığınız belgelerde belirtilen koşulları kabul ettiğinizi onaylarsınız."
 
 #: packages/ui/components/recipient/recipient-role-select.tsx
 msgid "Can prepare"
@@ -2765,7 +2765,7 @@ msgstr "Checkout"
 
 #: packages/lib/constants/i18n.ts
 msgid "Chinese"
-msgstr "Chinese"
+msgstr "Çince"
 
 #: apps/remix/app/components/dialogs/template-direct-link-dialog.tsx
 msgid "Choose an existing recipient from below to continue"
@@ -2961,14 +2961,14 @@ msgstr "Completed Documents"
 #: apps/remix/app/components/general/document/document-certificate-qr-view.tsx
 #: apps/remix/app/components/general/document/document-certificate-qr-view.tsx
 msgid "Completed on {formattedDate}"
-msgstr "Completed on {formattedDate}"
+msgstr "{formattedDate} tarihinde tamamlandı"
 
 #: packages/lib/constants/pdf-viewer-i18n.ts
 #: packages/lib/constants/pdf-viewer-i18n.ts
 #: packages/lib/constants/pdf-viewer-i18n.ts
 #: packages/lib/constants/pdf-viewer-i18n.ts
 msgid "Configuration Error"
-msgstr "Configuration Error"
+msgstr "Yapılandırma Hatası"
 
 #. placeholder {0}: parseMessageDescriptor(_, FRIENDLY_FIELD_TYPE[currentField.type])
 #: apps/remix/app/components/embed/authoring/field-advanced-settings-drawer.tsx
@@ -3084,11 +3084,11 @@ msgstr "Confirmation email sent"
 
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "Consent to Electronic Transactions"
-msgstr "Consent to Electronic Transactions"
+msgstr "Elektronik İşlemlere Onay"
 
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "Contact Information"
-msgstr "Contact Information"
+msgstr "İletişim Bilgileri"
 
 #: apps/remix/app/components/dialogs/organisation-create-dialog.tsx
 msgid "Contact sales here"
@@ -3512,7 +3512,7 @@ msgstr "Created"
 #: apps/remix/app/routes/_internal+/[__htmltopdf]+/audit-log.tsx
 #: packages/lib/server-only/pdf/render-audit-logs.ts
 msgid "Created At"
-msgstr "Created At"
+msgstr "Oluşturulma Tarihi"
 
 #: apps/remix/app/routes/_authenticated+/t.$teamUrl+/documents.$id.logs.tsx
 msgid "Created by"
@@ -3916,7 +3916,7 @@ msgstr "Delete your account and all its contents, including completed documents.
 #: apps/remix/app/routes/_internal+/[__htmltopdf]+/audit-log.tsx
 #: packages/lib/server-only/pdf/render-audit-logs.ts
 msgid "Deleted"
-msgstr "Deleted"
+msgstr "Silindi"
 
 #: apps/remix/app/components/dialogs/account-delete-dialog.tsx
 msgid "Deleting account..."
@@ -3934,7 +3934,7 @@ msgstr "Destination"
 #: apps/remix/app/routes/_internal+/[__htmltopdf]+/certificate.tsx
 #: packages/lib/server-only/pdf/render-certificate.ts
 msgid "Details"
-msgstr "Details"
+msgstr "Ayrıntılar"
 
 #: apps/remix/app/components/dialogs/ai-field-detection-dialog.tsx
 #: apps/remix/app/components/dialogs/ai-recipient-detection-dialog.tsx
@@ -3991,7 +3991,7 @@ msgstr "Developer Mode"
 #: apps/remix/app/routes/_internal+/[__htmltopdf]+/certificate.tsx
 #: packages/lib/server-only/pdf/render-certificate.ts
 msgid "Device"
-msgstr "Device"
+msgstr "Cihaz"
 
 #: packages/email/template-components/template-footer.tsx
 msgid "Did not expect this email? <0>Click here to report the sender</0>. Never sign a document you don't recognize or weren't expecting."
@@ -4190,7 +4190,7 @@ msgstr "Belge erişimi"
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "Document access auth updated"
-msgstr "Document access auth updated"
+msgstr "Belge erişim doğrulaması güncellendi"
 
 #: apps/remix/app/components/general/document/document-status.tsx
 msgid "Document All"
@@ -4203,12 +4203,12 @@ msgstr "Belge Onaylandı"
 #: apps/remix/app/components/dialogs/envelope-cancel-dialog.tsx
 #: apps/remix/app/components/general/document/document-status.tsx
 msgid "Document cancelled"
-msgstr "Document cancelled"
+msgstr "Belge iptal edildi"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "Document cancelled"
-msgstr "Document cancelled"
+msgstr "Belge iptal edildi"
 
 #: apps/remix/app/routes/_recipient+/sign.$token+/_index.tsx
 #: apps/remix/app/routes/_recipient+/sign.$token+/_index.tsx
@@ -4220,14 +4220,14 @@ msgstr "Belge İptal Edildi"
 #: apps/remix/app/components/general/admin-global-settings-section.tsx
 #: apps/remix/app/components/general/document/document-status.tsx
 msgid "Document completed"
-msgstr "Document completed"
+msgstr "Belge tamamlandı"
 
 #: packages/lib/utils/document-audit-logs.ts
 #: packages/lib/utils/document-audit-logs.ts
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "Document completed"
-msgstr "Document completed"
+msgstr "Belge tamamlandı"
 
 #: packages/ui/components/document/document-email-checkboxes.tsx
 #: packages/ui/components/document/document-email-checkboxes.tsx
@@ -4244,12 +4244,12 @@ msgstr "Document conversion is temporarily unavailable. Please try again shortly
 
 #: apps/remix/app/components/dialogs/template-use-dialog.tsx
 msgid "Document created"
-msgstr "Document created"
+msgstr "Belge oluşturuldu"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "Document created"
-msgstr "Document created"
+msgstr "Belge oluşturuldu"
 
 #: apps/remix/app/routes/embed+/v1+/authoring_.completed.create.tsx
 #: apps/remix/app/routes/embed+/v2+/authoring+/envelope.create._index.tsx
@@ -4287,12 +4287,12 @@ msgstr "Document creation has been temporarily paused"
 #: apps/remix/app/components/general/admin-global-settings-section.tsx
 #: apps/remix/app/routes/_authenticated+/t.$teamUrl+/documents.$id._index.tsx
 msgid "Document deleted"
-msgstr "Document deleted"
+msgstr "Belge silindi"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "Document deleted"
-msgstr "Document deleted"
+msgstr "Belge silindi"
 
 #: packages/ui/components/document/document-email-checkboxes.tsx
 msgid "Document deleted email"
@@ -4324,11 +4324,11 @@ msgstr "Document Editor"
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "Document external ID updated"
-msgstr "Document external ID updated"
+msgstr "Belgenin dış kimliği güncellendi"
 
 #: apps/remix/app/components/general/document/document-certificate-qr-view.tsx
 msgid "Document found in your account"
-msgstr "Document found in your account"
+msgstr "Belge hesabınızda bulundu"
 
 #: apps/remix/app/components/dialogs/envelope-delete-dialog.tsx
 msgid "Document hidden"
@@ -4370,7 +4370,7 @@ msgstr "Document metrics"
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "Document moved to team"
-msgstr "Document moved to team"
+msgstr "Belge ekibe taşındı"
 
 #: apps/remix/app/routes/_recipient+/sign.$token+/complete.tsx
 msgid "Document no longer available to sign"
@@ -4379,7 +4379,7 @@ msgstr "Belge artık imzalanamıyor"
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "Document opened"
-msgstr "Document opened"
+msgstr "Belge açıldı"
 
 #: apps/remix/app/components/general/admin-global-settings-section.tsx
 #: apps/remix/app/components/general/document/document-status.tsx
@@ -4424,12 +4424,12 @@ msgstr "Document resent"
 
 #: apps/remix/app/components/general/document/document-edit-form.tsx
 msgid "Document sent"
-msgstr "Document sent"
+msgstr "Belge gönderildi"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "Document sent"
-msgstr "Document sent"
+msgstr "Belge gönderildi"
 
 #: apps/remix/app/components/general/envelope-editor/envelope-editor-settings-dialog.tsx
 #: apps/remix/app/components/general/envelope-editor/envelope-editor.tsx
@@ -4443,7 +4443,7 @@ msgstr "Belge İmzalandı"
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "Document signing auth updated"
-msgstr "Document signing auth updated"
+msgstr "Belge imza doğrulaması güncellendi"
 
 #: apps/remix/app/components/dialogs/envelope-delete-dialog.tsx
 msgid "Document signing process will be cancelled"
@@ -4470,12 +4470,12 @@ msgstr "Document Title"
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "Document title updated"
-msgstr "Document title updated"
+msgstr "Belge başlığı güncellendi"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "Document updated"
-msgstr "Document updated"
+msgstr "Belge güncellendi"
 
 #: apps/remix/app/routes/embed+/v2+/authoring+/envelope.edit.$id.tsx
 msgid "Document Updated"
@@ -4504,7 +4504,7 @@ msgstr "Document usage is approaching fair use limits"
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "Document viewed"
-msgstr "Document viewed"
+msgstr "Belge görüntülendi"
 
 #: apps/remix/app/routes/_recipient+/sign.$token+/complete.tsx
 msgid "Document Viewed"
@@ -4521,7 +4521,7 @@ msgstr "Belge görünürlüğü"
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "Document visibility updated"
-msgstr "Document visibility updated"
+msgstr "Belge görünürlüğü güncellendi"
 
 #: apps/remix/app/components/tables/admin-organisation-overview-table.tsx
 msgid "Document Volume"
@@ -4787,7 +4787,7 @@ msgstr "Duplicate values are not allowed"
 
 #: packages/lib/constants/i18n.ts
 msgid "Dutch"
-msgstr "Dutch"
+msgstr "Felemenkçe"
 
 #: apps/remix/app/components/forms/editor/editor-field-number-form.tsx
 #: packages/ui/primitives/document-flow/field-items-advanced-settings/number-field.tsx
@@ -4844,11 +4844,11 @@ msgstr "eg. Mac"
 
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "Electronic Delivery of Documents"
-msgstr "Electronic Delivery of Documents"
+msgstr "Belgelerin Elektronik Teslimi"
 
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "Electronic Signature Disclosure"
-msgstr "Electronic Signature Disclosure"
+msgstr "Elektronik İmza Bilgilendirmesi"
 
 #: apps/remix/app/components/dialogs/admin-user-create-dialog.tsx
 #: apps/remix/app/components/dialogs/ai-field-detection-dialog.tsx
@@ -5011,7 +5011,7 @@ msgstr "Email reply-to"
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "Email resent"
-msgstr "Email resent"
+msgstr "E-posta yeniden gönderildi"
 
 #: apps/remix/app/components/dialogs/envelope-distribute-dialog.tsx
 #: apps/remix/app/components/general/envelope-editor/envelope-editor-settings-dialog.tsx
@@ -5027,7 +5027,7 @@ msgstr "Email sending has been temporarily paused"
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "Email sent"
-msgstr "Email sent"
+msgstr "E-posta gönderildi"
 
 #: apps/remix/app/routes/_unauthenticated+/check-email.tsx
 msgid "Email sent!"
@@ -5202,7 +5202,7 @@ msgstr "Enclosed Document"
 
 #: packages/lib/server-only/pdf/render-audit-logs.ts
 msgid "Enclosed Documents"
-msgstr "Enclosed Documents"
+msgstr "Ekli Belgeler"
 
 #: apps/remix/app/components/forms/email-transport-form.tsx
 msgid "Endpoint (optional)"
@@ -5210,7 +5210,7 @@ msgstr "Endpoint (optional)"
 
 #: packages/lib/constants/i18n.ts
 msgid "English"
-msgstr "English"
+msgstr "İngilizce"
 
 #: apps/remix/app/routes/embed+/v2+/authoring+/_layout.tsx
 msgid "Ensure that you are using the embedding token, not the API token"
@@ -5333,7 +5333,7 @@ msgstr "Envelope distributed"
 #: packages/lib/server-only/pdf/render-certificate.ts
 #: packages/lib/server-only/pdf/render-certificate.ts
 msgid "Envelope ID"
-msgstr "Envelope ID"
+msgstr "Zarf Kimliği"
 
 #: apps/remix/app/components/forms/subscription-claim-form.tsx
 #: apps/remix/app/routes/_authenticated+/admin+/organisations.$id.tsx
@@ -5343,22 +5343,22 @@ msgstr "Envelope Item Count"
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "Envelope item created"
-msgstr "Envelope item created"
+msgstr "Zarf öğesi oluşturuldu"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "Envelope item deleted"
-msgstr "Envelope item deleted"
+msgstr "Zarf öğesi silindi"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "Envelope item PDF replaced"
-msgstr "Envelope item PDF replaced"
+msgstr "Zarf öğesinin PDF'i değiştirildi"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "Envelope item updated"
-msgstr "Envelope item updated"
+msgstr "Zarf öğesi güncellendi"
 
 #: apps/remix/app/components/dialogs/envelope-redistribute-dialog.tsx
 msgid "Envelope resent"
@@ -5753,17 +5753,17 @@ msgstr "Alan yer tutucusu"
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "Field prefilled by assistant"
-msgstr "Field prefilled by assistant"
+msgstr "Alan yardımcı tarafından önceden dolduruldu"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "Field signed"
-msgstr "Field signed"
+msgstr "Alan imzalandı"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "Field unsigned"
-msgstr "Field unsigned"
+msgstr "Alanın imzası geri alındı"
 
 #: apps/remix/app/components/tables/admin-document-recipient-item-table.tsx
 msgid "Fields"
@@ -5847,7 +5847,7 @@ msgstr "Yazı Boyutu"
 
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "For any questions regarding this disclosure, electronic signatures, or any related process, please contact us at: <0>{SUPPORT_EMAIL}</0>"
-msgstr "For any questions regarding this disclosure, electronic signatures, or any related process, please contact us at: <0>{SUPPORT_EMAIL}</0>"
+msgstr "Bu bilgilendirme, elektronik imzalar ya da ilgili herhangi bir süreçle ilgili sorularınız için bize şu adresten ulaşın: <0>{SUPPORT_EMAIL}</0>"
 
 #: apps/remix/app/components/dialogs/template-bulk-send-dialog.tsx
 msgid "For each recipient, provide their email (required) and name (optional) in separate columns. Download the template CSV below for the correct format."
@@ -5906,7 +5906,7 @@ msgstr "Free Signature Settings"
 
 #: packages/lib/constants/i18n.ts
 msgid "French"
-msgstr "French"
+msgstr "Fransızca"
 
 #: apps/remix/app/components/tables/admin-email-transports-table.tsx
 msgid "From"
@@ -5954,7 +5954,7 @@ msgstr "Generate Links"
 
 #: packages/lib/constants/i18n.ts
 msgid "German"
-msgstr "German"
+msgstr "Almanca"
 
 #: packages/ui/components/document/document-global-auth-action-select.tsx
 msgid "Global recipient action authentication"
@@ -6009,7 +6009,7 @@ msgstr "Go home"
 
 #: apps/remix/app/components/general/document/document-certificate-qr-view.tsx
 msgid "Go to document"
-msgstr "Go to document"
+msgstr "Belgeye git"
 
 #: packages/ui/primitives/data-table-pagination.tsx
 msgid "Go to first page"
@@ -6232,7 +6232,7 @@ msgstr "Bu belgenin bir kopyasını almam gerekiyor"
 #: apps/remix/app/routes/_internal+/[__htmltopdf]+/certificate.tsx
 #: packages/lib/server-only/pdf/render-certificate.ts
 msgid "I am the owner of this document"
-msgstr "I am the owner of this document"
+msgstr "Bu belgenin sahibiyim"
 
 #: apps/remix/app/routes/_unauthenticated+/o.$orgUrl.signin.tsx
 msgid "I understand that I am providing my credentials to a 3rd party service configured by this organisation"
@@ -6534,7 +6534,7 @@ msgstr "Invoice"
 #: packages/lib/server-only/pdf/render-audit-logs.ts
 #: packages/lib/server-only/pdf/render-certificate.ts
 msgid "IP Address"
-msgstr "IP Address"
+msgstr "IP Adresi"
 
 #: apps/remix/app/routes/_authenticated+/admin+/organisations.$id.tsx
 msgid "Irreversible actions for this organisation"
@@ -6546,7 +6546,7 @@ msgstr "Issuer URL"
 
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "It is crucial to keep your contact information, especially your email address, up to date with us. Please notify us immediately of any changes to ensure that you continue to receive all necessary communications."
-msgstr "It is crucial to keep your contact information, especially your email address, up to date with us. Please notify us immediately of any changes to ensure that you continue to receive all necessary communications."
+msgstr "İletişim bilgilerinizi, özellikle e-posta adresinizi bizde güncel tutmanız çok önemlidir. Gerekli tüm bildirimleri almaya devam edebilmeniz için herhangi bir değişikliği bize hemen bildirin."
 
 #. placeholder {0}: publicProfile.name
 #: apps/remix/app/routes/_profile+/p.$url.tsx
@@ -6575,11 +6575,11 @@ msgstr "Şu an imzalama sırası sizde değil. Sıra size geldiğinde talimatlar
 
 #: packages/lib/constants/i18n.ts
 msgid "Italian"
-msgstr "Italian"
+msgstr "İtalyanca"
 
 #: packages/lib/constants/i18n.ts
 msgid "Japanese"
-msgstr "Japanese"
+msgstr "Japonca"
 
 #: packages/email/templates/organisation-invite.tsx
 msgid "Join {organisationName} on Documenso"
@@ -6606,7 +6606,7 @@ msgstr "Key identifiers and relationships for this team."
 
 #: packages/lib/constants/i18n.ts
 msgid "Korean"
-msgstr "Korean"
+msgstr "Korece"
 
 #: apps/remix/app/components/forms/editor/editor-field-generic-field-forms.tsx
 #: apps/remix/app/components/forms/editor/editor-field-text-form.tsx
@@ -6674,7 +6674,7 @@ msgstr "Last updated"
 #: apps/remix/app/routes/_internal+/[__htmltopdf]+/audit-log.tsx
 #: packages/lib/server-only/pdf/render-audit-logs.ts
 msgid "Last Updated"
-msgstr "Last Updated"
+msgstr "Son Güncelleme"
 
 #: apps/remix/app/routes/_authenticated+/admin+/documents.$id.tsx
 msgid "Last updated at"
@@ -6726,7 +6726,7 @@ msgstr "Left"
 
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "Legality of Electronic Signatures"
-msgstr "Legality of Electronic Signatures"
+msgstr "Elektronik İmzaların Hukuki Geçerliliği"
 
 #: apps/remix/app/components/forms/editor/editor-field-generic-field-forms.tsx
 msgid "Letter spacing"
@@ -7253,7 +7253,7 @@ msgstr "My Folder"
 #: apps/remix/app/routes/_internal+/[__htmltopdf]+/certificate.tsx
 #: packages/lib/server-only/pdf/render-audit-logs.ts
 msgid "N/A"
-msgstr "N/A"
+msgstr "Yok"
 
 #: apps/remix/app/components/dialogs/admin-user-create-dialog.tsx
 #: apps/remix/app/components/dialogs/ai-field-detection-dialog.tsx
@@ -7586,7 +7586,7 @@ msgstr "None"
 
 #: packages/lib/constants/document-auth.ts
 msgid "None (Overrides global settings)"
-msgstr "None (Overrides global settings)"
+msgstr "Yok (genel ayarları geçersiz kılar)"
 
 #: apps/remix/app/routes/_authenticated+/t.$teamUrl+/documents.$id._index.tsx
 #: apps/remix/app/routes/_authenticated+/t.$teamUrl+/documents.$id.edit.tsx
@@ -7980,7 +7980,7 @@ msgstr "Override organisation settings"
 #: apps/remix/app/routes/_internal+/[__htmltopdf]+/audit-log.tsx
 #: packages/lib/server-only/pdf/render-audit-logs.ts
 msgid "Owner"
-msgstr "Owner"
+msgstr "Sahip"
 
 #: apps/remix/app/components/general/admin-global-settings-section.tsx
 msgid "Owner document completed"
@@ -8047,7 +8047,7 @@ msgstr "Passkey name"
 #: apps/remix/app/routes/_internal+/[__htmltopdf]+/certificate.tsx
 #: packages/lib/server-only/pdf/generate-certificate-pdf.ts
 msgid "Passkey Re-Authentication"
-msgstr "Passkey Re-Authentication"
+msgstr "Geçiş Anahtarıyla Yeniden Doğrulama"
 
 #: apps/remix/app/routes/_authenticated+/settings+/security._index.tsx
 #: apps/remix/app/routes/_authenticated+/settings+/security.passkeys.tsx
@@ -8075,7 +8075,7 @@ msgstr "Parola"
 #: apps/remix/app/routes/_internal+/[__htmltopdf]+/certificate.tsx
 #: packages/lib/server-only/pdf/generate-certificate-pdf.ts
 msgid "Password Re-Authentication"
-msgstr "Password Re-Authentication"
+msgstr "Parolayla Yeniden Doğrulama"
 
 #: packages/email/templates/forgot-password.tsx
 msgid "Password Reset Requested"
@@ -8460,7 +8460,7 @@ msgstr "Please upload a logo"
 
 #: packages/lib/constants/i18n.ts
 msgid "Polish"
-msgstr "Polish"
+msgstr "Lehçe"
 
 #: apps/remix/app/components/forms/email-transport-form.tsx
 msgid "Port"
@@ -8468,7 +8468,7 @@ msgstr "Port"
 
 #: packages/lib/constants/i18n.ts
 msgid "Portuguese (Brazil)"
-msgstr "Portuguese (Brazil)"
+msgstr "Portekizce (Brezilya)"
 
 #: apps/remix/app/components/general/envelope-editor/envelope-editor-fields-page.tsx
 #: packages/ui/primitives/document-flow/field-item.tsx
@@ -8685,7 +8685,7 @@ msgstr "Ready"
 #: apps/remix/app/routes/_internal+/[__htmltopdf]+/certificate.tsx
 #: packages/lib/server-only/pdf/render-certificate.ts
 msgid "Reason"
-msgstr "Reason"
+msgstr "Gerekçe"
 
 #: apps/remix/app/components/dialogs/envelope-cancel-dialog.tsx
 #: apps/remix/app/components/dialogs/envelopes-bulk-cancel-dialog.tsx
@@ -8755,23 +8755,23 @@ msgstr "Alıcı işlem doğrulaması"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "Recipient approved the document"
-msgstr "Recipient approved the document"
+msgstr "Alıcı belgeyi onayladı"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "Recipient authenticated with the signing provider"
-msgstr "Recipient authenticated with the signing provider"
+msgstr "Alıcı imza sağlayıcısıyla kimliğini doğruladı"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "Recipient authorised the remote signature"
-msgstr "Recipient authorised the remote signature"
+msgstr "Alıcı uzaktan imzayı onayladı"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "Recipient CC'd the document"
-msgstr "Recipient CC'd the document"
+msgstr "Alıcı belgenin bir kopyasını aldı"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "Recipient completed their task"
-msgstr "Recipient completed their task"
+msgstr "Alıcı görevini tamamladı"
 
 #: apps/remix/app/components/forms/subscription-claim-form.tsx
 #: apps/remix/app/routes/_authenticated+/admin+/organisations.$id.tsx
@@ -8784,7 +8784,7 @@ msgstr "Alıcı süresi doldu e-postası"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "Recipient failed to validate a 2FA token for the document"
-msgstr "Recipient failed to validate a 2FA token for the document"
+msgstr "Alıcı belge için iki adımlı doğrulama kodunu doğrulayamadı"
 
 #: apps/remix/app/components/general/envelope-editor/envelope-editor-fields-page.tsx
 #: packages/ui/primitives/document-flow/field-item.tsx
@@ -8793,11 +8793,11 @@ msgstr "Alıcı kimliği:"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "Recipient rejected the document"
-msgstr "Recipient rejected the document"
+msgstr "Alıcı belgeyi reddetti"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "Recipient rejected the document externally"
-msgstr "Recipient rejected the document externally"
+msgstr "Alıcı belgeyi harici olarak reddetti"
 
 #: apps/remix/app/components/general/admin-global-settings-section.tsx
 msgid "Recipient removed"
@@ -8809,11 +8809,11 @@ msgstr "Alıcı çıkarıldı e-postası"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "Recipient requested a 2FA token for the document"
-msgstr "Recipient requested a 2FA token for the document"
+msgstr "Alıcı belge için iki adımlı doğrulama kodu istedi"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "Recipient requested a remote signature"
-msgstr "Recipient requested a remote signature"
+msgstr "Alıcı uzaktan imza istedi"
 
 #: apps/remix/app/components/general/admin-global-settings-section.tsx
 msgid "Recipient signed"
@@ -8825,7 +8825,7 @@ msgstr "Alıcı imzaladı e-postası"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "Recipient signed the document"
-msgstr "Recipient signed the document"
+msgstr "Alıcı belgeyi imzaladı"
 
 #: apps/remix/app/components/general/admin-global-settings-section.tsx
 msgid "Recipient signing request"
@@ -8838,7 +8838,7 @@ msgstr "Alıcı imza isteği e-postası"
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "Recipient signing window expired"
-msgstr "Recipient signing window expired"
+msgstr "Alıcının imza süresi doldu"
 
 #: apps/remix/app/components/tables/admin-document-recipient-item-table.tsx
 msgid "Recipient updated"
@@ -8846,19 +8846,19 @@ msgstr "Recipient updated"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "Recipient validated a 2FA token for the document"
-msgstr "Recipient validated a 2FA token for the document"
+msgstr "Alıcı belge için iki adımlı doğrulama kodunu doğruladı"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "Recipient viewed the document"
-msgstr "Recipient viewed the document"
+msgstr "Alıcı belgeyi görüntüledi"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "Recipient's remote signature was applied"
-msgstr "Recipient's remote signature was applied"
+msgstr "Alıcının uzaktan imzası uygulandı"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "Recipient's signing provider authentication failed"
-msgstr "Recipient's signing provider authentication failed"
+msgstr "Alıcının imza sağlayıcısı doğrulaması başarısız oldu"
 
 #: apps/remix/app/components/embed/authoring/configure-document-recipients.tsx
 #: apps/remix/app/components/general/document/document-page-view-recipients.tsx
@@ -8869,7 +8869,7 @@ msgstr "Recipient's signing provider authentication failed"
 #: apps/remix/app/routes/_internal+/[__htmltopdf]+/audit-log.tsx
 #: packages/lib/server-only/pdf/render-audit-logs.ts
 msgid "Recipients"
-msgstr "Recipients"
+msgstr "Alıcılar"
 
 #: apps/remix/app/routes/_authenticated+/admin+/stats.tsx
 msgid "Recipients metrics"
@@ -9151,19 +9151,19 @@ msgstr "Requesting Organisation"
 
 #: packages/lib/constants/document-auth.ts
 msgid "Require 2FA"
-msgstr "Require 2FA"
+msgstr "İki adımlı doğrulama zorunlu"
 
 #: packages/lib/constants/document-auth.ts
 msgid "Require account"
-msgstr "Require account"
+msgstr "Hesap zorunlu"
 
 #: packages/lib/constants/document-auth.ts
 msgid "Require passkey"
-msgstr "Require passkey"
+msgstr "Geçiş anahtarı zorunlu"
 
 #: packages/lib/constants/document-auth.ts
 msgid "Require password"
-msgstr "Require password"
+msgstr "Parola zorunlu"
 
 #: packages/ui/primitives/document-flow/field-items-advanced-settings/checkbox-field.tsx
 #: packages/ui/primitives/document-flow/field-items-advanced-settings/dropdown-field.tsx
@@ -9288,7 +9288,7 @@ msgstr "Restricted Access"
 
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "Retention of Documents"
-msgstr "Retention of Documents"
+msgstr "Belgelerin Saklanması"
 
 #: apps/remix/app/components/tables/admin-document-jobs-table.tsx
 msgid "Retried"
@@ -10083,7 +10083,7 @@ msgstr "İmza"
 #: apps/remix/app/routes/_internal+/[__htmltopdf]+/certificate.tsx
 #: packages/lib/server-only/pdf/render-certificate.ts
 msgid "Signature ID"
-msgstr "Signature ID"
+msgstr "İmza Kimliği"
 
 #: packages/ui/primitives/signature-pad/signature-pad-draw.tsx
 msgid "Signature is too small"
@@ -10135,7 +10135,7 @@ msgstr "İmzacı"
 #: apps/remix/app/routes/_internal+/[__htmltopdf]+/certificate.tsx
 #: packages/lib/server-only/pdf/render-certificate.ts
 msgid "Signer Events"
-msgstr "Signer Events"
+msgstr "İmzacı Olayları"
 
 #: packages/lib/constants/recipient-roles.ts
 msgctxt "Recipient role plural name"
@@ -10154,7 +10154,7 @@ msgstr "İmza algoritması desteklenmiyor"
 #: apps/remix/app/routes/_internal+/[__htmltopdf]+/certificate.tsx
 #: packages/lib/server-only/pdf/render-certificate.ts
 msgid "Signing Certificate"
-msgstr "Signing Certificate"
+msgstr "İmza Sertifikası"
 
 #: apps/remix/app/components/general/document-signing/csc-recipient-blocked-page.tsx
 msgid "Signing certificate is invalid"
@@ -10163,7 +10163,7 @@ msgstr "İmza sertifikası geçersiz"
 #: apps/remix/app/routes/_internal+/[__htmltopdf]+/certificate.tsx
 #: packages/lib/server-only/pdf/render-certificate.ts
 msgid "Signing certificate provided by"
-msgstr "Signing certificate provided by"
+msgstr "İmza sertifikasını sağlayan"
 
 #: packages/lib/jobs/definitions/emails/send-document-completed-emails.handler.ts
 #: packages/lib/jobs/definitions/emails/send-document-completed-emails.handler.ts
@@ -10228,7 +10228,7 @@ msgstr "Signing window expired for \"{displayName}\" on \"{documentName}\""
 #: packages/lib/utils/document-audit-logs.ts
 #: packages/lib/utils/document-audit-logs.ts
 msgid "Signing window expired for {0}"
-msgstr "Signing window expired for {0}"
+msgstr "{0} için imza süresi doldu"
 
 #: apps/remix/app/components/forms/signup.tsx
 msgid "Signup is currently disabled or not available for your email domain."
@@ -10411,7 +10411,7 @@ msgstr "Space-separated list of domains. Leave empty to allow all domains."
 
 #: packages/lib/constants/i18n.ts
 msgid "Spanish"
-msgstr "Spanish"
+msgstr "İspanyolca"
 
 #: apps/remix/app/routes/_authenticated+/o.$orgUrl.settings._layout.tsx
 msgid "SSO"
@@ -10437,7 +10437,7 @@ msgstr "Stats"
 #: apps/remix/app/routes/_internal+/[__htmltopdf]+/audit-log.tsx
 #: packages/lib/server-only/pdf/render-audit-logs.ts
 msgid "Status"
-msgstr "Status"
+msgstr "Durum"
 
 #. placeholder {0}: currentStepData.order
 #. placeholder {1}: envelopeEditorSteps.length
@@ -10653,11 +10653,11 @@ msgstr "Sync Stripe subscription"
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "System auto inserted fields"
-msgstr "System auto inserted fields"
+msgstr "Sistemin otomatik eklediği alanlar"
 
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "System Requirements"
-msgstr "System Requirements"
+msgstr "Sistem Gereksinimleri"
 
 #: apps/remix/app/components/general/app-command-menu.tsx
 msgid "System Theme"
@@ -11042,7 +11042,7 @@ msgstr "Bildiriminiz için teşekkürler; bu göndereni incelenmek üzere işare
 
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "Thank you for using Documenso to perform your electronic document signing. The purpose of this disclosure is to inform you about the process, legality, and your rights regarding the use of electronic signatures on our platform. By opting to use an electronic signature, you are agreeing to the terms and conditions outlined below."
-msgstr "Thank you for using Documenso to perform your electronic document signing. The purpose of this disclosure is to inform you about the process, legality, and your rights regarding the use of electronic signatures on our platform. By opting to use an electronic signature, you are agreeing to the terms and conditions outlined below."
+msgstr "Elektronik belge imzanız için Documenso'yu kullandığınız için teşekkür ederiz. Bu bilgilendirmenin amacı, platformumuzda elektronik imza kullanımına ilişkin süreç, hukuki geçerlilik ve haklarınız konusunda sizi bilgilendirmektir. Elektronik imza kullanmayı seçerek aşağıda belirtilen hüküm ve koşulları kabul etmiş olursunuz."
 
 #: packages/email/template-components/template-forgot-password.tsx
 msgid "That's okay, it happens! Click the button below to reset your password."
@@ -11129,7 +11129,7 @@ msgstr "Belge sahibine kararınız bildirildi. Gerekirse sizinle başka talimatl
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "The document ownership was delegated to {0} on behalf of {1}"
-msgstr "The document ownership was delegated to {0} on behalf of {1}"
+msgstr "Belgenin sahipliği {1} adına {0} kişisine devredildi"
 
 #: apps/remix/app/components/dialogs/envelope-cancel-dialog.tsx
 #: apps/remix/app/components/dialogs/envelopes-bulk-cancel-dialog.tsx
@@ -11142,20 +11142,20 @@ msgstr "The document was created but could not be sent to recipients."
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "The document was rejected externally by {onBehalfOf} on behalf of {user}"
-msgstr "The document was rejected externally by {onBehalfOf} on behalf of {user}"
+msgstr "Belge {user} adına {onBehalfOf} tarafından harici olarak reddedildi"
 
 #: packages/lib/utils/document-audit-logs.ts
 #: packages/lib/utils/document-audit-logs.ts
 msgid "The document was rejected externally by {onBehalfOf} on behalf of the recipient"
-msgstr "The document was rejected externally by {onBehalfOf} on behalf of the recipient"
+msgstr "Belge alıcı adına {onBehalfOf} tarafından harici olarak reddedildi"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "The document was rejected externally on behalf of {user}"
-msgstr "The document was rejected externally on behalf of {user}"
+msgstr "Belge {user} adına harici olarak reddedildi"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "The document was rejected externally on behalf of the recipient"
-msgstr "The document was rejected externally on behalf of the recipient"
+msgstr "Belge alıcı adına harici olarak reddedildi"
 
 #: apps/remix/app/components/dialogs/envelope-delete-dialog.tsx
 msgid "The document will be hidden from your account"
@@ -11615,7 +11615,7 @@ msgstr "This document has too many recipients. Please remove some recipients or 
 
 #: apps/remix/app/components/general/document/document-certificate-qr-view.tsx
 msgid "This document is available in your Documenso account. You can view more details, recipients, and audit logs there."
-msgstr "This document is available in your Documenso account. You can view more details, recipients, and audit logs there."
+msgstr "Bu belge Documenso hesabınızda mevcut. Daha fazla ayrıntıyı, alıcıları ve denetim kayıtlarını orada görebilirsiniz."
 
 #: apps/remix/app/routes/_authenticated+/t.$teamUrl+/documents.$id._index.tsx
 msgid "This document is currently a draft and has not been sent"
@@ -11845,7 +11845,7 @@ msgstr "Time zone"
 #: packages/ui/primitives/document-flow/add-settings.tsx
 #: packages/ui/primitives/template-flow/add-template-settings.tsx
 msgid "Time Zone"
-msgstr "Time Zone"
+msgstr "Saat Dilimi"
 
 #: apps/remix/app/components/dialogs/envelope-rename-dialog.tsx
 #: apps/remix/app/components/embed/authoring/configure-document-view.tsx
@@ -11982,7 +11982,7 @@ msgstr "Bu alanı imzalamak için oturum açmış olmanız gerekir."
 
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "To use our electronic signature service, you must have access to:"
-msgstr "To use our electronic signature service, you must have access to:"
+msgstr "Elektronik imza hizmetimizi kullanmak için şunlara erişiminiz olmalıdır:"
 
 #: apps/remix/app/components/embed/embed-authentication-required.tsx
 msgid "To view this document you need to be signed into your account, please sign in to continue."
@@ -12142,7 +12142,7 @@ msgstr "Two factor authentication recovery codes are used to access your account
 #: apps/remix/app/routes/_internal+/[__htmltopdf]+/certificate.tsx
 #: packages/lib/server-only/pdf/generate-certificate-pdf.ts
 msgid "Two-Factor Authentication"
-msgstr "Two-Factor Authentication"
+msgstr "İki Adımlı Doğrulama"
 
 #: apps/remix/app/components/forms/2fa/disable-authenticator-app-dialog.tsx
 msgid "Two-factor authentication disabled"
@@ -12159,7 +12159,7 @@ msgstr "Two-factor authentication has been disabled for your account. You will n
 #: apps/remix/app/routes/_internal+/[__htmltopdf]+/certificate.tsx
 #: packages/lib/server-only/pdf/generate-certificate-pdf.ts
 msgid "Two-Factor Re-Authentication"
-msgstr "Two-Factor Re-Authentication"
+msgstr "İki Adımlı Yeniden Doğrulama"
 
 #: apps/remix/app/components/tables/admin-document-recipient-item-table.tsx
 #: apps/remix/app/components/tables/admin-email-transports-table.tsx
@@ -12311,7 +12311,7 @@ msgstr "Geri al"
 #: packages/lib/server-only/pdf/render-certificate.ts
 #: packages/lib/server-only/pdf/render-certificate.ts
 msgid "Unknown"
-msgstr "Unknown"
+msgstr "Bilinmiyor"
 
 #: packages/ui/lib/handle-dropzone-rejection.tsx
 msgid "Unknown error"
@@ -12497,7 +12497,7 @@ msgstr "Updating Template"
 
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "Updating Your Information"
-msgstr "Updating Your Information"
+msgstr "Bilgilerinizi Güncelleme"
 
 #: packages/ui/primitives/document-dropzone.tsx
 #: packages/ui/primitives/document-upload-button.tsx
@@ -12660,12 +12660,12 @@ msgstr "Used by claims"
 #: apps/remix/app/components/tables/internal-audit-log-table.tsx
 #: packages/lib/server-only/pdf/render-audit-logs.ts
 msgid "User"
-msgstr "User"
+msgstr "Kullanıcı"
 
 #: apps/remix/app/components/tables/internal-audit-log-table.tsx
 #: packages/lib/server-only/pdf/render-audit-logs.ts
 msgid "User Agent"
-msgstr "User Agent"
+msgstr "Tarayıcı Bilgisi"
 
 #: apps/remix/app/components/dialogs/admin-user-create-dialog.tsx
 msgid "User created and welcome email sent"
@@ -13454,7 +13454,7 @@ msgstr "Webhooks"
 
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "Welcome"
-msgstr "Welcome"
+msgstr "Hoş geldiniz"
 
 #: apps/remix/app/routes/_unauthenticated+/signin.tsx
 msgid "Welcome back, we are lucky to have you."
@@ -13510,7 +13510,7 @@ msgstr "Bir belgeyi imzaladığınızda, daha önce verilmiş bilgileri kullanar
 
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "When you use our platform to affix your electronic signature to documents, you are consenting to do so under the Electronic Signatures in Global and National Commerce Act (E-Sign Act) and other applicable laws. This action indicates your agreement to use electronic means to sign documents and receive notifications."
-msgstr "When you use our platform to affix your electronic signature to documents, you are consenting to do so under the Electronic Signatures in Global and National Commerce Act (E-Sign Act) and other applicable laws. This action indicates your agreement to use electronic means to sign documents and receive notifications."
+msgstr "Belgelere elektronik imzanızı atmak için platformumuzu kullandığınızda, bunu ABD Küresel ve Ulusal Ticarette Elektronik İmzalar Yasası (E-Sign Act) ve diğer geçerli mevzuat kapsamında yapmayı kabul etmiş olursunuz. Bu işlem, belgeleri imzalamak ve bildirim almak için elektronik yolları kullanmayı kabul ettiğinizi gösterir."
 
 #: apps/remix/app/routes/_authenticated+/o.$orgUrl.settings.sso.tsx
 msgid "Whether to enable the SSO portal for your organisation"
@@ -13535,7 +13535,7 @@ msgstr "Window"
 
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "Withdrawing Consent"
-msgstr "Withdrawing Consent"
+msgstr "Onayın Geri Alınması"
 
 #: apps/remix/app/components/general/organisation-usage-panel.tsx
 msgid "Within limit"
@@ -13562,19 +13562,19 @@ msgstr "Yes"
 #: apps/remix/app/components/general/template/template-page-view-information.tsx
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You"
-msgstr "You"
+msgstr "Siz"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You added a field"
-msgstr "You added a field"
+msgstr "Bir alan eklediniz"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You added a recipient"
-msgstr "You added a recipient"
+msgstr "Bir alıcı eklediniz"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You approved the document"
-msgstr "You approved the document"
+msgstr "Belgeyi onayladınız"
 
 #: apps/remix/app/components/dialogs/envelope-cancel-dialog.tsx
 msgid "You are about to cancel <0>\"{title}\"</0>"
@@ -13757,11 +13757,11 @@ msgstr "You are not authorized to reset two factor authentcation for this user."
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You authenticated with the signing provider"
-msgstr "You authenticated with the signing provider"
+msgstr "İmza sağlayıcısıyla kimliğinizi doğruladınız"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You authorised the remote signature"
-msgstr "You authorised the remote signature"
+msgstr "Uzaktan imzayı onayladınız"
 
 #: apps/remix/app/components/dialogs/ai-field-detection-dialog.tsx
 msgid "You can add fields manually in the editor."
@@ -13826,7 +13826,7 @@ msgstr "You can view the document and its status by clicking the button below."
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You cancelled the document"
-msgstr "You cancelled the document"
+msgstr "Belgeyi iptal ettiniz"
 
 #: apps/remix/app/components/general/envelope-editor/envelope-editor-recipient-form.tsx
 #: packages/ui/primitives/document-flow/add-signers.tsx
@@ -13877,20 +13877,20 @@ msgstr "You cannot upload encrypted PDFs."
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You CC'd the document"
-msgstr "You CC'd the document"
+msgstr "Belgenin bir kopyasını aldınız"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You completed your task"
-msgstr "You completed your task"
+msgstr "Görevinizi tamamladınız"
 
 #. placeholder {0}: data.envelopeItemTitle
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You created an envelope item with title {0}"
-msgstr "You created an envelope item with title {0}"
+msgstr "{0} başlıklı bir zarf öğesi oluşturdunuz"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You created the document"
-msgstr "You created the document"
+msgstr "Belgeyi oluşturdunuz"
 
 #. placeholder {0}: i18n.date(periodEnd)
 #: apps/remix/app/routes/_authenticated+/o.$orgUrl.settings.billing.tsx
@@ -13917,11 +13917,11 @@ msgstr "You currently have no access to any teams within this organisation. Plea
 #. placeholder {0}: data.envelopeItemTitle
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You deleted an envelope item with title {0}"
-msgstr "You deleted an envelope item with title {0}"
+msgstr "{0} başlıklı zarf öğesini sildiniz"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You deleted the document"
-msgstr "You deleted the document"
+msgstr "Belgeyi sildiniz"
 
 #: apps/remix/app/components/forms/token.tsx
 msgid "You do not have permission to create a token for this team."
@@ -13937,7 +13937,7 @@ msgstr "You don't need to sign it anymore."
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You failed to validate a 2FA token for the document"
-msgstr "You failed to validate a 2FA token for the document"
+msgstr "Belge için iki adımlı doğrulama kodunu doğrulayamadınız"
 
 #. placeholder {0}: data.organisationName
 #: apps/remix/app/routes/_unauthenticated+/organisation.invite.$token.tsx
@@ -14081,7 +14081,7 @@ msgstr "You have successfully revoked access."
 
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "You have the right to withdraw your consent to use electronic signatures at any time before completing the signing process. To withdraw your consent, please contact the sender of the document. In failing to contact the sender you may reach out to <0>{SUPPORT_EMAIL}</0> for assistance. Be aware that withdrawing consent may delay or halt the completion of the related transaction or service."
-msgstr "You have the right to withdraw your consent to use electronic signatures at any time before completing the signing process. To withdraw your consent, please contact the sender of the document. In failing to contact the sender you may reach out to <0>{SUPPORT_EMAIL}</0> for assistance. Be aware that withdrawing consent may delay or halt the completion of the related transaction or service."
+msgstr "İmza sürecini tamamlamadan önce elektronik imza kullanımına verdiğiniz onayı istediğiniz zaman geri alma hakkına sahipsiniz. Onayınızı geri almak için belgeyi gönderen kişiyle iletişime geçin. Gönderene ulaşamazsanız yardım için <0>{SUPPORT_EMAIL}</0> adresine yazabilirsiniz. Onayı geri almanın ilgili işlemin ya da hizmetin tamamlanmasını geciktirebileceğini veya durdurabileceğini unutmayın."
 
 #: apps/remix/app/components/forms/form-sticky-save-bar.tsx
 msgid "You have unsaved changes"
@@ -14106,7 +14106,7 @@ msgstr "You have verified your email address for <0>{0}</0>."
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You moved the document to team"
-msgstr "You moved the document to team"
+msgstr "Belgeyi ekibe taşıdınız"
 
 #: apps/remix/app/components/dialogs/admin-organisation-delete-dialog.tsx
 #: apps/remix/app/components/dialogs/organisation-delete-dialog.tsx
@@ -14222,107 +14222,107 @@ msgstr "Bu alanı görüntülemek için bir geçiş anahtarı kurmanız gerekir.
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You opened the document"
-msgstr "You opened the document"
+msgstr "Belgeyi açtınız"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You prefilled a field"
-msgstr "You prefilled a field"
+msgstr "Bir alanı önceden doldurdunuz"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You rejected the document"
-msgstr "You rejected the document"
+msgstr "Belgeyi reddettiniz"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You removed a field"
-msgstr "You removed a field"
+msgstr "Bir alanı kaldırdınız"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You removed a recipient"
-msgstr "You removed a recipient"
+msgstr "Bir alıcıyı kaldırdınız"
 
 #. placeholder {0}: data.envelopeItemTitle
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You replaced the PDF for envelope item {0}"
-msgstr "You replaced the PDF for envelope item {0}"
+msgstr "{0} zarf öğesinin PDF'ini değiştirdiniz"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You requested a 2FA token for the document"
-msgstr "You requested a 2FA token for the document"
+msgstr "Belge için iki adımlı doğrulama kodu istediniz"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You requested a remote signature"
-msgstr "You requested a remote signature"
+msgstr "Uzaktan imza istediniz"
 
 #. placeholder {0}: data.recipientEmail
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You resent an email to {0}"
-msgstr "You resent an email to {0}"
+msgstr "{0} adresine e-postayı yeniden gönderdiniz"
 
 #. placeholder {0}: data.recipientEmail
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You sent an email to {0}"
-msgstr "You sent an email to {0}"
+msgstr "{0} adresine e-posta gönderdiniz"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You sent the document"
-msgstr "You sent the document"
+msgstr "Belgeyi gönderdiniz"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You signed a field"
-msgstr "You signed a field"
+msgstr "Bir alanı imzaladınız"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You signed the document"
-msgstr "You signed the document"
+msgstr "Belgeyi imzaladınız"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You unsigned a field"
-msgstr "You unsigned a field"
+msgstr "Bir alanın imzasını geri aldınız"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You updated a field"
-msgstr "You updated a field"
+msgstr "Bir alanı güncellediniz"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You updated a recipient"
-msgstr "You updated a recipient"
+msgstr "Bir alıcıyı güncellediniz"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You updated an envelope item"
-msgstr "You updated an envelope item"
+msgstr "Bir zarf öğesini güncellediniz"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You updated the document"
-msgstr "You updated the document"
+msgstr "Belgeyi güncellediniz"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You updated the document access auth requirements"
-msgstr "You updated the document access auth requirements"
+msgstr "Belgenin erişim doğrulama koşullarını güncellediniz"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You updated the document external ID"
-msgstr "You updated the document external ID"
+msgstr "Belgenin dış kimliğini güncellediniz"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You updated the document signing auth requirements"
-msgstr "You updated the document signing auth requirements"
+msgstr "Belgenin imza doğrulama koşullarını güncellediniz"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You updated the document title"
-msgstr "You updated the document title"
+msgstr "Belgenin başlığını güncellediniz"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You updated the document visibility"
-msgstr "You updated the document visibility"
+msgstr "Belgenin görünürlüğünü güncellediniz"
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You validated a 2FA token for the document"
-msgstr "You validated a 2FA token for the document"
+msgstr "Belge için iki adımlı doğrulama kodunu doğruladınız"
 
 #: packages/lib/utils/document-audit-logs.ts
 #: packages/lib/utils/document-audit-logs.ts
 msgid "You viewed the document"
-msgstr "You viewed the document"
+msgstr "Belgeyi görüntülediniz"
 
 #: apps/remix/app/components/dialogs/admin-organisation-create-dialog.tsx
 msgid "You will need to configure any claims or subscription after creating this organisation"
@@ -14663,7 +14663,7 @@ msgstr "Your recovery codes are listed below. Please store them in a safe place.
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "Your remote signature was applied"
-msgstr "Your remote signature was applied"
+msgstr "Uzaktan imzanız uygulandı"
 
 #: apps/remix/app/components/general/document-signing/csc-recipient-signing-in-progress-page.tsx
 msgid "Your signing authorisation expired before the signature could be applied. Please reauthorise to retry."
@@ -14675,7 +14675,7 @@ msgstr "İmza sertifikanız geçersiz, süresi dolmuş ya da gerekli bir anahtar
 
 #: packages/lib/utils/document-audit-logs.ts
 msgid "Your signing provider authentication failed"
-msgstr "Your signing provider authentication failed"
+msgstr "İmza sağlayıcısı doğrulamanız başarısız oldu"
 
 #: apps/remix/app/components/general/document-signing/csc-recipient-blocked-page.tsx
 msgid "Your signing provider does not advertise a signing algorithm this document accepts. Contact your administrator or signing provider for assistance."
