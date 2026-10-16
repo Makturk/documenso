@@ -28,9 +28,9 @@ export const DocumentReminderEmailTemplate = ({
   role = RecipientRole.SIGNER,
   reportUrl,
 }: DocumentReminderEmailTemplateProps) => {
-  const { _ } = useLingui();
+  const { _, i18n } = useLingui();
 
-  const action = _(RECIPIENT_ROLES_DESCRIPTION[role].actionVerb).toLowerCase();
+  const action = _(RECIPIENT_ROLES_DESCRIPTION[role].actionVerb).toLocaleLowerCase(i18n.locale);
 
   const previewText = msg`Reminder to ${action} ${documentName}`;
 

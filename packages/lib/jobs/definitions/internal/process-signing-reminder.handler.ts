@@ -130,7 +130,7 @@ export const run = async ({ payload, io }: { payload: TProcessSigningReminderJob
 
   const i18n = await getI18nInstance(emailLanguage);
 
-  const recipientActionVerb = i18n._(RECIPIENT_ROLES_DESCRIPTION[recipient.role].actionVerb).toLowerCase();
+  const recipientActionVerb = i18n._(RECIPIENT_ROLES_DESCRIPTION[recipient.role].actionVerb).toLocaleLowerCase(i18n.locale);
 
   let emailSubject = i18n._(msg`Reminder: Please ${recipientActionVerb} the document "${envelope.title}"`);
 
