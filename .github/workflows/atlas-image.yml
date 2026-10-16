@@ -1,7 +1,7 @@
 # Atlas Solo — Türkçe Documenso imajı (upstream v2.16.0 + tr dili + imza sayfasında gönderen firma adı).
 # Upstream iş akışları bu dalda kaldırıldı; yalnız bu iş çalışır. Çıktı:
 #   ghcr.io/makturk/documenso:atlas-<kısa sha>   (değişmez; canlıda bu kullanılır)
-#   ghcr.io/makturk/documenso:atlas-2.16.0-tr    (son derleme)
+#   ghcr.io/makturk/documenso:atlas-2.20.0-tr    (son derleme)
 name: atlas-image
 
 on:
@@ -44,6 +44,6 @@ jobs:
           push: true
           tags: |
             ghcr.io/makturk/documenso:atlas-${{ steps.sha.outputs.short }}
-            ghcr.io/makturk/documenso:atlas-2.16.0-tr
+            ghcr.io/makturk/documenso:atlas-2.20.0-tr
           cache-from: type=gha
           cache-to: type=gha,mode=max

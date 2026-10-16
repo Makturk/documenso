@@ -14,7 +14,7 @@ set -euo pipefail
 
 NEW_TAG="${1:?kullanım: scripts/atlas/upgrade.sh <upstream etiketi, ör. v2.21.0>}"
 CUR_BRANCH="$(git rev-parse --abbrev-ref HEAD)"
-CUR_BASE="${ATLAS_BASE_TAG:-v2.16.0}"   # mevcut dalın kurulduğu upstream etiketi
+CUR_BASE="${ATLAS_BASE_TAG:-v2.20.0}"   # mevcut dalın kurulduğu upstream etiketi
 NEW_BRANCH="atlas/${NEW_TAG}-tr"
 
 git remote get-url upstream >/dev/null 2>&1 || git remote add upstream https://github.com/documenso/documenso.git
@@ -38,7 +38,7 @@ for c in ${ATLAS_COMMITS}; do
   fi
 done
 
-sed -i.bak "s/ATLAS_BASE_TAG:-v[0-9.]*/ATLAS_BASE_TAG:-${NEW_TAG}/" scripts/atlas/upgrade.sh && rm -f scripts/atlas/upgrade.sh.bak
+sed -i.bak "s/ATLAS_BASE_TAG:-v2.20.0[0-9.]*/ATLAS_BASE_TAG:-${NEW_TAG}/" scripts/atlas/upgrade.sh && rm -f scripts/atlas/upgrade.sh.bak
 sed -i.bak "s/:atlas-[0-9.]*-tr/:atlas-${NEW_TAG#v}-tr/" .github/workflows/atlas-image.yml && rm -f .github/workflows/atlas-image.yml.bak
 
 npm ci

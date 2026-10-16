@@ -1,7 +1,6 @@
 # Atlas Solo — Documenso kopyası
 
-Upstream: documenso/documenso **v2.16.0** (canlıdaki sürümle aynı → veritabanı şeması değişmez,
-geri dönüş güvenli). Değişiklikler (`atlas/v2.16.0-tr` dalı):
+Upstream: documenso/documenso **v2.20.0**. Değişiklikler (`atlas/v2.20.0-tr` dalı):
 
 1. **Türkçe dil** (`tr`): `packages/lib/constants/locales.ts` + `i18n.ts`;
    `packages/lib/translations/tr/web.po` — imza sayfası, e-imza bilgilendirmesi, imzalı PDF'e eklenen
@@ -14,11 +13,8 @@ geri dönüş güvenli). Değişiklikler (`atlas/v2.16.0-tr` dalı):
 3. **Gönderen firma adı**: belge `externalId` = `atlas-sender:<URI kodlu ad>` ise imza sayfası
    başlığı "<Firma> sizi bu belgeyi imzalamaya davet etti" olur
    (`document-signing-page-view-v1.tsx`). Tüm firmalar tek Documenso ekibinden gönderdiği için.
-4. **Güvenlik yaması GHSA-3494-9j87-fj64** (yüksek; ≤2.17.0 etkilenir): girişsiz
-   `/admin/users.data?_routes=…` isteği tüm Documenso kullanıcılarının ad/e-postasını döndürüyordu
-   (2026-10-16'da canlıda doğrulandı). `apps/remix/server/atlas-admin-guard.ts` `/admin` altındaki
-   her isteği yönetici oturumu yoksa ana sayfaya yönlendirir. **v2.18.0+ üzerine taşırken kaldır**
-   (upstream düzeltmesi #3351 yeterli) — dosya + `server/router.ts`'teki `atlasAdminGuard` satırı.
+4. ~~Güvenlik yaması GHSA-3494-9j87-fj64~~ — v2.16.0 dalında geçici `atlas-admin-guard.ts` vardı;
+   v2.20.0'a geçişte kaldırıldı, upstream #3351 (`/admin` rotalarında `adminMiddleware`) kapatıyor.
 5. Upstream iş akışları kaldırıldı. Bizimkiler:
    - `.github/workflows/atlas-image.yml` — `atlas/**` dalına her push'ta imajı GHCR'ye derler.
    - `.github/workflows/atlas-upstream-check.yml` — ayda bir (her ayın 1'i) upstream'i kontrol eder;
