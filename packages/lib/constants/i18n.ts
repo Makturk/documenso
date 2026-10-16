@@ -67,6 +67,11 @@ export const SUPPORTED_LANGUAGES: Record<string, SupportedLanguage> = {
     short: 'zh',
     full: msg`Chinese`,
   },
+  // Atlas Solo: Türkçe (imza sayfası + müşteriye görünen metinler; packages/lib/translations/tr).
+  tr: {
+    short: 'tr',
+    full: msg`Turkish`,
+  },
 } satisfies Record<SupportedLanguageCodes, SupportedLanguage>;
 
 export const isValidLanguageCode = (code: unknown): code is SupportedLanguageCodes =>
