@@ -36,6 +36,8 @@ Lisans: AGPL-3.0 (upstream) — bu depo herkese açık kaynak olarak durur (canl
   Supabase) → **yalnız `documenso` servisine dokun**, her zaman `--no-deps`.
 - `.env`: Documenso ayarları. `NEXT_PUBLIC_DISABLE_SIGNUP=true` — hesap açma kapalı; imza
   tamamlandı sayfasındaki "hesap aç" paneli görünmez (yedek: `.env.bak-2026-10-16-pre-disable-signup`).
+- Canlı (2026-10-16): `ghcr.io/makturk/documenso:atlas-b85c01246f17` (GHSA yaması + sertifika Türkçe +
+  çeviri ikinci kontrolü). Önceki: `atlas-309fa942672c`. Yedek: `/root/documenso-2026-10-16-pre-b85c012.dump`.
 - İlk Atlas öncesi imaj (v2.16.0, 2026-07-21 derlemesi):
   `documenso/documenso@sha256:945bd2c04306bd5d78def0c4ceafdffb6b0a106cd6a2543db5acda9a6424b2d9`
 
@@ -77,13 +79,14 @@ docker pull $IMG
 - **Göç VARSA**: deneme konteyneri açılışta göçleri çalıştırır → canlı veritabanına BAĞLAMA.
   Yedekten geçici bir veritabanı kur ve onu kullan:
   ```bash
-  docker exec documenso-production-database-1 pg_dump -U "$POSTGRES_USER" -Fc "$POSTGRES_DB" > /root/documenso-deneme.dump
+  docker exec documenso-production-database-1 sh -c 'pg_dump -U "$POSTGRES_USER" -Fc "$POSTGRES_DB"' > /root/documenso-deneme.dump
   docker run -d --name documenso-deneme-db --network documenso-production_default \
     -e POSTGRES_USER=deneme -e POSTGRES_PASSWORD=deneme -e POSTGRES_DB=deneme postgres:15
   docker exec -i documenso-deneme-db pg_restore -U deneme -d deneme --no-owner < /root/documenso-deneme.dump
   # .env'in kopyasında DATABASE_URL / DIRECT_URL'i documenso-deneme-db'ye çevir → --env-file .env.deneme
   ```
-  (`.env` değerlerini ekrana/sohbete basma; değişkenler `.env`'den `set -a; . ./.env; set +a` ile okunur.)
+  (`.env` değerlerini ekrana/sohbete basma. `.env` kabukla `source` edilemez (boşluklu değer var);
+  veritabanı kullanıcı/adı yukarıdaki gibi konteynerin kendi ortamından okunur.)
 - Bilgisayardan: `ssh -L 3901:127.0.0.1:3901 root@166.1.94.181` → `http://localhost:3901`.
   Kontrol: gerçek bir imza bağlantısının yolu `/sign/<token>?lang=tr` (yalnız açıp bak, imzalama) →
   Türkçe + başlıkta firma adı; `curl -s -o /dev/null -w '%{http_code}' 'http://localhost:3901/admin/users.data?_routes=routes%2F_authenticated%2B%2Fadmin%2B%2Fusers._index'`
@@ -93,7 +96,7 @@ docker pull $IMG
 **5. Canlıya al**:
 ```bash
 cd /opt/documenso
-docker exec documenso-production-database-1 pg_dump -U "$POSTGRES_USER" -Fc "$POSTGRES_DB" > /root/documenso-$(date +%F).dump   # göç varsa ŞART
+docker exec documenso-production-database-1 sh -c 'pg_dump -U "$POSTGRES_USER" -Fc "$POSTGRES_DB"' > /root/documenso-$(date +%F).dump   # göç varsa ŞART
 cp compose.yml compose.yml.bak-$(date +%F)
 # compose.yml → documenso.image: yeni sha etiketi; yorumdaki "geri dönüş" = bir önceki çalışan imaj
 docker compose up -d --no-deps documenso
@@ -105,7 +108,7 @@ Atlas'tan (demo kiracı) test adresine bir belge gönderip imzala → imzalı PD
 **6. Geri dönüş**:
 - Göç YOKSA: `compose.yml` imaj satırını yorumdaki önceki imaja çevir → `docker compose up -d --no-deps documenso`.
 - Göç VARSA: eski imaj yeni şemayla çalışmayabilir → önce `docker compose stop documenso`, yedeği geri yükle
-  (`docker exec -i documenso-production-database-1 pg_restore -U "$POSTGRES_USER" -d "$POSTGRES_DB" --clean --if-exists < /root/documenso-<tarih>.dump`),
+  (`docker exec -i documenso-production-database-1 sh -c 'pg_restore -U "$POSTGRES_USER" -d "$POSTGRES_DB" --clean --if-exists' < /root/documenso-<tarih>.dump`),
   sonra eski imaj + `up -d --no-deps documenso`. Yedekten sonra imzalanan belgeler kaybolur → hızlı karar ver.
 
 **7. Kapat**:
