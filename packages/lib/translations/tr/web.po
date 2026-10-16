@@ -888,7 +888,7 @@ msgstr "404 Email domain not found"
 
 #: apps/remix/app/components/general/generic-error-layout.tsx
 msgid "404 not found"
-msgstr "404 not found"
+msgstr "404 bulunamadı"
 
 #: apps/remix/app/routes/_authenticated+/t.$teamUrl+/documents.$id._index.tsx
 #: apps/remix/app/routes/_authenticated+/t.$teamUrl+/documents.$id.edit.tsx
@@ -942,7 +942,7 @@ msgstr "5 Documents a month"
 
 #: apps/remix/app/components/general/generic-error-layout.tsx
 msgid "500 Internal Server Error"
-msgstr "500 Internal Server Error"
+msgstr "500 Sunucu Hatası"
 
 #: apps/remix/app/components/forms/token.tsx
 msgid "6 months"
@@ -1664,7 +1664,7 @@ msgstr "Allows authenticating using biometrics, password managers, hardware keys
 #: apps/remix/app/components/dialogs/ai-field-detection-dialog.tsx
 #: apps/remix/app/components/dialogs/ai-recipient-detection-dialog.tsx
 msgid "Almost done"
-msgstr "Almost done"
+msgstr "Neredeyse bitti"
 
 #: apps/remix/app/components/forms/signup.tsx
 msgid "Already have an account? <0>Sign in instead</0>"
@@ -1807,7 +1807,7 @@ msgstr "An error occurred while enabling the user."
 
 #: apps/remix/app/components/general/pdf-viewer/pdf-viewer.tsx
 msgid "An error occurred while loading the document."
-msgstr "An error occurred while loading the document."
+msgstr "Belge yüklenirken bir hata oluştu."
 
 #: apps/remix/app/components/dialogs/envelopes-bulk-move-dialog.tsx
 msgid "An error occurred while moving the items."
@@ -1918,7 +1918,7 @@ msgstr "An organisation wants to link your account. Please review the details be
 
 #: apps/remix/app/components/general/generic-error-layout.tsx
 msgid "An unexpected error occurred."
-msgstr "An unexpected error occurred."
+msgstr "Beklenmeyen bir hata oluştu."
 
 #: apps/remix/app/components/dialogs/account-delete-dialog.tsx
 #: apps/remix/app/components/dialogs/admin-document-delete-dialog.tsx
@@ -2801,7 +2801,7 @@ msgstr "Claim"
 
 #: apps/remix/app/components/general/claim-account.tsx
 msgid "Claim account"
-msgstr "Claim account"
+msgstr "Hesabı sahiplen"
 
 #: apps/remix/app/routes/_authenticated+/admin+/_layout.tsx
 msgid "Claims"
@@ -2939,7 +2939,7 @@ msgstr "Aşağıdaki imzacılar için alanları doldurun."
 #: packages/email/template-components/template-document-self-signed.tsx
 #: packages/lib/constants/document.ts
 msgid "Completed"
-msgstr "Completed"
+msgstr "Tamamlandı"
 
 #: apps/remix/app/routes/_authenticated+/admin+/documents.$id.tsx
 msgid "Completed At"
@@ -2948,7 +2948,7 @@ msgstr "Completed At"
 #: packages/email/templates/document-completed.tsx
 #: packages/email/templates/document-self-signed.tsx
 msgid "Completed Document"
-msgstr "Completed Document"
+msgstr "Tamamlanan Belge"
 
 #: apps/remix/app/components/general/app-command-menu.tsx
 msgid "Completed documents"
@@ -3133,7 +3133,7 @@ msgstr "Continue by assisting with the document."
 
 #: packages/email/template-components/template-document-completed.tsx
 msgid "Continue by downloading the document."
-msgstr "Continue by downloading the document."
+msgstr "Belgeyi indirerek devam edin."
 
 #: packages/email/template-components/template-document-invite.tsx
 #: packages/email/template-components/template-document-reminder.tsx
@@ -4236,7 +4236,7 @@ msgstr "Belge tamamlandı e-postası"
 
 #: apps/remix/app/components/embed/embed-document-completed.tsx
 msgid "Document Completed!"
-msgstr "Document Completed!"
+msgstr "Belge Tamamlandı!"
 
 #: apps/remix/app/utils/toast-error-messages.ts
 msgid "Document conversion is temporarily unavailable. Please try again shortly or upload a PDF."
@@ -4904,7 +4904,7 @@ msgstr "E-posta"
 #: apps/remix/app/components/forms/send-confirmation-email.tsx
 #: apps/remix/app/components/general/claim-account.tsx
 msgid "Email address"
-msgstr "Email address"
+msgstr "E-posta adresi"
 
 #: apps/remix/app/components/dialogs/organisation-email-create-dialog.tsx
 #: apps/remix/app/components/forms/signup.tsx
@@ -5465,7 +5465,7 @@ msgstr "Error linking account"
 
 #: apps/remix/app/components/general/pdf-viewer/pdf-viewer-page-image.tsx
 msgid "Error loading page"
-msgstr "Error loading page"
+msgstr "Sayfa yüklenirken hata"
 
 #: apps/remix/app/components/embed/authoring/configure-document-upload.tsx
 msgid "Error uploading file"
@@ -6179,7 +6179,7 @@ msgstr "Hide license key"
 #: apps/remix/app/routes/_authenticated+/t.$teamUrl+/documents.folders._index.tsx
 #: apps/remix/app/routes/_authenticated+/t.$teamUrl+/templates.folders._index.tsx
 msgid "Home"
-msgstr "Home"
+msgstr "Ana sayfa"
 
 #: apps/remix/app/components/dialogs/envelopes-bulk-move-dialog.tsx
 msgid "Home (No Folder)"
@@ -6203,7 +6203,7 @@ msgstr "How long recipients have to complete this document after it is sent. Use
 #: apps/remix/app/components/forms/signup.tsx
 #: apps/remix/app/components/general/claim-account.tsx
 msgid "Human verification required"
-msgstr "Human verification required"
+msgstr "İnsan doğrulaması gerekli"
 
 #: apps/remix/app/routes/_unauthenticated+/organisation.sso.confirmation.$token.tsx
 msgid "I agree to link my account with this organization"
@@ -6846,7 +6846,7 @@ msgstr "Öneriler yükleniyor..."
 #: apps/remix/app/components/general/organisation-members-multiselect-combobox.tsx
 #: apps/remix/app/routes/_authenticated+/admin+/email-domains.$id.tsx
 msgid "Loading..."
-msgstr "Loading..."
+msgstr "Yükleniyor..."
 
 #: apps/remix/app/components/forms/document-preferences-form.tsx
 msgid "Local timezone"
@@ -7386,7 +7386,7 @@ msgstr "No active drafts"
 #: apps/remix/app/components/general/pdf-viewer/envelope-pdf-viewer.tsx
 #: apps/remix/app/components/general/pdf-viewer/pdf-viewer.tsx
 msgid "No document found"
-msgstr "No document found"
+msgstr "Belge bulunamadı"
 
 #: apps/remix/app/components/general/document-signing/document-signing-page-view-v2.tsx
 msgid "No document selected"
@@ -7725,7 +7725,7 @@ msgstr "Only pending documents you have permission to manage will be cancelled."
 #: apps/remix/app/routes/_authenticated+/t.$teamUrl+/templates.$id._layout.tsx
 #: apps/remix/app/routes/_profile+/_layout.tsx
 msgid "Oops! Something went wrong."
-msgstr "Oops! Something went wrong."
+msgstr "Bir şeyler ters gitti."
 
 #: apps/remix/app/routes/_authenticated+/o.$orgUrl._index.tsx
 msgid "Open menu"
@@ -8006,7 +8006,7 @@ msgstr "Page {0} of {1}"
 
 #: apps/remix/app/components/general/pdf-viewer/pdf-viewer.tsx
 msgid "Page {pageNumber} of {numPages}"
-msgstr "Page {pageNumber} of {numPages}"
+msgstr "Sayfa {pageNumber} / {numPages}"
 
 #: apps/remix/app/components/tables/admin-organisations-table.tsx
 msgctxt "Subscription status"
@@ -8088,7 +8088,7 @@ msgstr "Password Reset Successful"
 #: apps/remix/app/components/forms/signup.tsx
 #: apps/remix/app/components/general/claim-account.tsx
 msgid "Password should not be common or based on personal information"
-msgstr "Password should not be common or based on personal information"
+msgstr "Parola yaygın bir parola olmamalı ve kişisel bilgilere dayanmamalı"
 
 #: apps/remix/app/components/forms/password.tsx
 #: apps/remix/app/components/forms/reset-password.tsx
@@ -8212,7 +8212,7 @@ msgstr "Bir sayı seçin"
 
 #: apps/remix/app/components/general/claim-account.tsx
 msgid "Pick a password"
-msgstr "Pick a password"
+msgstr "Bir parola seçin"
 
 #: apps/remix/app/components/general/user-profile-timur.tsx
 msgid "Pick any of the following agreements below and start signing to get started"
@@ -8267,7 +8267,7 @@ msgstr "Please check the CSV file and make sure it is according to our format"
 #: apps/remix/app/components/embed/embed-document-waiting-for-turn.tsx
 #: apps/remix/app/components/embed/embed-recipient-expired.tsx
 msgid "Please check with the parent application for more information."
-msgstr "Please check with the parent application for more information."
+msgstr "Daha fazla bilgi için belgeyi gönderen uygulamaya bakın."
 
 #: apps/remix/app/routes/_recipient+/sign.$token+/waiting.tsx
 msgid "Please check your email for updates."
@@ -8281,7 +8281,7 @@ msgstr "Please choose your new password"
 #: apps/remix/app/components/forms/signup.tsx
 #: apps/remix/app/components/general/claim-account.tsx
 msgid "Please complete the CAPTCHA challenge before signing in."
-msgstr "Please complete the CAPTCHA challenge before signing in."
+msgstr "Giriş yapmadan önce lütfen doğrulamayı tamamlayın."
 
 #: apps/remix/app/components/general/document-signing/document-signing-mobile-widget.tsx
 #: apps/remix/app/components/general/document-signing/document-signing-mobile-widget.tsx
@@ -8437,7 +8437,7 @@ msgstr "Please try again and make sure you enter the correct email address."
 
 #: apps/remix/app/components/general/pdf-viewer/pdf-viewer-states.tsx
 msgid "Please try again or contact our support."
-msgstr "Please try again or contact our support."
+msgstr "Lütfen tekrar deneyin ya da destek ekibimizle iletişime geçin."
 
 #. placeholder {0}: `'${t(deleteMessage)}'`
 #: apps/remix/app/components/dialogs/envelope-delete-dialog.tsx
@@ -8698,11 +8698,11 @@ msgstr "Reason for cancellation: {cancellationReason}"
 
 #: apps/remix/app/components/general/document/document-page-view-recipients.tsx
 msgid "Reason for rejection: "
-msgstr "Reason for rejection: "
+msgstr "Reddetme nedeni: "
 
 #: packages/email/template-components/template-document-rejected.tsx
 msgid "Reason for rejection: {rejectionReason}"
-msgstr "Reason for rejection: {rejectionReason}"
+msgstr "Reddetme nedeni: {rejectionReason}"
 
 #: apps/remix/app/components/general/document-signing/document-signing-reject-dialog.tsx
 msgid "Reason must be less than 500 characters"
@@ -8943,7 +8943,7 @@ msgstr "Redirecting to {0}..."
 #: apps/remix/app/components/forms/signup.tsx
 #: apps/remix/app/components/general/claim-account.tsx
 msgid "Registration Successful"
-msgstr "Registration Successful"
+msgstr "Kayıt Başarılı"
 
 #: apps/remix/app/components/general/envelope-signing/envelope-signer-header.tsx
 msgid "Reject"
@@ -8965,7 +8965,7 @@ msgstr "Belgeyi Reddet"
 #: packages/lib/constants/document.ts
 #: packages/lib/server-only/pdf/render-certificate.ts
 msgid "Rejected"
-msgstr "Rejected"
+msgstr "Reddedildi"
 
 #: packages/email/template-components/template-document-rejection-confirmed.tsx
 msgid "Rejection Confirmed"
@@ -9840,7 +9840,7 @@ msgstr "Sending..."
 #: apps/remix/app/routes/_internal+/[__htmltopdf]+/certificate.tsx
 #: packages/lib/server-only/pdf/render-certificate.ts
 msgid "Sent"
-msgstr "Sent"
+msgstr "Gönderildi"
 
 #: apps/remix/app/components/general/organisation-usage-panel.tsx
 msgid "Sent this period"
@@ -9856,7 +9856,7 @@ msgstr "Sessions have been revoked"
 
 #: apps/remix/app/components/general/claim-account.tsx
 msgid "Set a password"
-msgstr "Set a password"
+msgstr "Parola belirleyin"
 
 #: packages/email/template-components/template-admin-user-created.tsx
 msgid "Set Password"
@@ -10168,7 +10168,7 @@ msgstr "Signing certificate provided by"
 #: packages/lib/jobs/definitions/emails/send-document-completed-emails.handler.ts
 #: packages/lib/jobs/definitions/emails/send-document-completed-emails.handler.ts
 msgid "Signing Complete!"
-msgstr "Signing Complete!"
+msgstr "İmza Tamamlandı!"
 
 #: apps/remix/app/routes/_recipient+/sign.$token+/expired.tsx
 msgid "Signing Deadline Expired"
@@ -10212,7 +10212,7 @@ msgstr "Signing Status"
 
 #: apps/remix/app/components/embed/embed-recipient-expired.tsx
 msgid "Signing Window Expired"
-msgstr "Signing Window Expired"
+msgstr "İmza Süresi Doldu"
 
 #. placeholder {0}: recipient.name || recipient.email
 #. placeholder {1}: envelope.title
@@ -10251,7 +10251,7 @@ msgstr "Site Settings"
 #: apps/remix/app/components/dialogs/ai-field-detection-dialog.tsx
 #: apps/remix/app/components/dialogs/ai-recipient-detection-dialog.tsx
 msgid "Skip"
-msgstr "Skip"
+msgstr "Atla"
 
 #: apps/remix/app/components/dialogs/envelope-distribute-dialog.tsx
 #: apps/remix/app/components/general/envelope-editor/envelope-editor-fields-page.tsx
@@ -10329,7 +10329,7 @@ msgstr "Something went wrong while detecting recipients."
 
 #: apps/remix/app/components/general/pdf-viewer/pdf-viewer-states.tsx
 msgid "Something went wrong while loading the document."
-msgstr "Something went wrong while loading the document."
+msgstr "Belge yüklenirken bir şeyler ters gitti."
 
 #: apps/remix/app/components/general/document-signing/document-signing-auth-passkey.tsx
 msgid "Something went wrong while loading your passkeys."
@@ -10341,12 +10341,12 @@ msgstr "Uzaktan imza hazırlanırken bir şeyler ters gitti. Lütfen tekrar dene
 
 #: packages/lib/constants/pdf-viewer-i18n.ts
 msgid "Something went wrong while rendering the document, please try again or contact our support."
-msgstr "Something went wrong while rendering the document, please try again or contact our support."
+msgstr "Belge görüntülenirken bir şeyler ters gitti, lütfen tekrar deneyin ya da destek ekibimizle iletişime geçin."
 
 #: packages/lib/constants/pdf-viewer-i18n.ts
 #: packages/lib/constants/pdf-viewer-i18n.ts
 msgid "Something went wrong while rendering the document, some fields may be missing or corrupted."
-msgstr "Something went wrong while rendering the document, some fields may be missing or corrupted."
+msgstr "Belge görüntülenirken bir şeyler ters gitti, bazı alanlar eksik ya da bozuk olabilir."
 
 #: apps/remix/app/components/general/envelope-editor/envelope-editor-upload-page.tsx
 msgid "Something went wrong while replacing the PDF"
@@ -11113,7 +11113,7 @@ msgstr "The document is already saved and cannot be changed."
 
 #: apps/remix/app/components/embed/embed-document-completed.tsx
 msgid "The document is now completed, please follow any instructions provided within the parent application."
-msgstr "The document is now completed, please follow any instructions provided within the parent application."
+msgstr "Belge tamamlandı; lütfen belgeyi gönderen uygulamadaki talimatları izleyin."
 
 #: packages/email/template-components/template-document-rejection-confirmed.tsx
 msgid "The document owner has been notified of this rejection. No further action is required from you at this time. The document owner may contact you with any questions regarding this rejection."
@@ -11292,7 +11292,7 @@ msgstr "The organisation you are looking for may have been removed, renamed or m
 
 #: apps/remix/app/components/general/generic-error-layout.tsx
 msgid "The page you are looking for was moved, removed, renamed or might never have existed."
-msgstr "The page you are looking for was moved, removed, renamed or might never have existed."
+msgstr "Aradığınız sayfa taşınmış, kaldırılmış, adı değiştirilmiş ya da hiç var olmamış olabilir."
 
 #. placeholder {0}: emailDomain.domain
 #: apps/remix/app/components/dialogs/organisation-email-create-dialog.tsx
@@ -11508,7 +11508,7 @@ msgstr "There was an error uploading your file. Please try again."
 
 #: packages/lib/constants/pdf-viewer-i18n.ts
 msgid "There was an issue rendering some fields, please review the fields and try again."
-msgstr "There was an issue rendering some fields, please review the fields and try again."
+msgstr "Bazı alanlar görüntülenirken sorun oluştu, lütfen alanları kontrol edip tekrar deneyin."
 
 #: packages/ui/components/document/document-global-auth-action-select.tsx
 msgid "These can be overriden by setting the authentication requirements directly on each recipient in the next step. Multiple methods can be selected."
@@ -11751,7 +11751,7 @@ msgstr "This session has expired. Please try again."
 #: apps/remix/app/components/general/envelope-editor/envelope-editor-recipient-form.tsx
 #: packages/ui/primitives/document-flow/add-signers.tsx
 msgid "This signer has already signed the document."
-msgstr "This signer has already signed the document."
+msgstr "Bu imzacı belgeyi zaten imzaladı."
 
 #: apps/remix/app/routes/_authenticated+/t.$teamUrl+/settings._index.tsx
 msgid "This team, and any associated data excluding billing invoices will be permanently deleted."
@@ -12059,7 +12059,7 @@ msgstr "Too many recipients"
 #: apps/remix/app/components/dialogs/ai-field-detection-dialog.tsx
 #: apps/remix/app/components/dialogs/ai-recipient-detection-dialog.tsx
 msgid "Too many requests"
-msgstr "Too many requests"
+msgstr "Çok fazla istek"
 
 #: apps/remix/app/components/forms/editor/editor-field-generic-field-forms.tsx
 msgid "Top"
@@ -12319,7 +12319,7 @@ msgstr "Unknown error"
 
 #: apps/remix/app/components/dialogs/ai-recipient-detection-dialog.tsx
 msgid "Unknown name"
-msgstr "Unknown name"
+msgstr "Bilinmeyen ad"
 
 #: apps/remix/app/components/general/claim-limit-fields.tsx
 #: apps/remix/app/components/general/organisation-usage-panel.tsx
@@ -14045,7 +14045,7 @@ msgstr "You have successfully left this organisation."
 #: apps/remix/app/components/forms/signup.tsx
 #: apps/remix/app/components/general/claim-account.tsx
 msgid "You have successfully registered. Please verify your account by clicking on the link you received in the email."
-msgstr "You have successfully registered. Please verify your account by clicking on the link you received in the email."
+msgstr "Kaydınız tamamlandı. Lütfen e-postanıza gelen bağlantıya tıklayarak hesabınızı doğrulayın."
 
 #: apps/remix/app/components/dialogs/organisation-email-domain-delete-dialog.tsx
 msgid "You have successfully removed this email domain from the organisation."
@@ -14687,7 +14687,7 @@ msgstr "İmza sağlayıcınız bu hesap için kullanılabilir kimlik bilgisi dö
 
 #: apps/remix/app/components/embed/embed-recipient-expired.tsx
 msgid "Your signing window for this document has expired. Please contact the sender for a new invitation."
-msgstr "Your signing window for this document has expired. Please contact the sender for a new invitation."
+msgstr "Bu belge için imza süreniz doldu. Yeni bir davet için lütfen göndereni arayın."
 
 #: apps/remix/app/components/forms/support-ticket-form.tsx
 msgid "Your support request has been submitted. We'll get back to you soon!"
