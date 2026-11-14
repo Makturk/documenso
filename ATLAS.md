@@ -43,7 +43,11 @@ Lisans: AGPL-3.0 (upstream) — bu depo herkese açık kaynak olarak durur (canl
   Supabase) → **yalnız `documenso` servisine dokun**, her zaman `--no-deps`.
 - `.env`: Documenso ayarları. `NEXT_PUBLIC_DISABLE_SIGNUP=true` — hesap açma kapalı; imza
   tamamlandı sayfasındaki "hesap aç" paneli görünmez (yedek: `.env.bak-2026-10-16-pre-disable-signup`).
-- Canlı (2026-10-16, v2.20.0): `ghcr.io/makturk/documenso:atlas-e7e87154b6f3` (`?lang` yönlendirmede
+- Canlı (2026-11-14, v2.20.0): `ghcr.io/makturk/documenso:atlas-4790c293c596` (trivy sertleştirmesi,
+  madde 6; göç yok → geri dönüş doğrudan `atlas-e7e87154b6f3`, yedek `compose.yml.bak-imgupd-2026-11-14-pre-documenso`).
+  DB `postgres:15.20-trixie` (15.19'dan; yedek `/opt/atlas/backup/tools/documenso-db-2026-11-14-pre-pg15.20.dump`,
+  `compose.yml.bak-imgupd-2026-11-14`). Kutu: 144.76.18.83.
+- Önceki canlı (2026-10-16, v2.20.0): `ghcr.io/makturk/documenso:atlas-e7e87154b6f3` (`?lang` yönlendirmede
   korunur; göç yok → geri dönüş doğrudan `atlas-f7139de41f00`, yedek `compose.yml.bak-2026-10-16-pre-lang-redirect`).
   v2.20.0'a ilk geçiş `atlas-f7139de41f00` ile — 2 göç uygulandı. Önceki: `atlas-b85c01246f17` (v2.16.0; yalnız göç öncesi yedekle geri dönülür:
   `/root/documenso-2026-10-16-pre-v2.20.0.dump`, `compose.yml.bak-2026-10-16-pre-v2.20.0`).
