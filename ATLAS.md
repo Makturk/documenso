@@ -26,6 +26,13 @@ Upstream: documenso/documenso **v2.20.0**. Değişiklikler (`atlas/v2.20.0-tr` d
      açar (sürüm notu özeti, Atlas commit'lerinin yeni sürüme deneme cherry-pick'i, ortak değişen
      dosyalar, yeni veritabanı göçleri, yeni çevrilecek metinler). Elle: Actions → Run workflow.
      Zamanlanmış iş yalnız **varsayılan daldan** koşar → depo varsayılan dalı güncel atlas dalı olmalı.
+6. **İmaj güvenlik sertleştirmesi** (trivy, 2026-11-14): `docker/Dockerfile` taban aşamasında
+   `apk upgrade`; runner aşamasından global npm/npx/corepack silinir (`start.sh` göçü
+   `node_modules/.bin/prisma` ile çalıştırır). Kök `package.json` `overrides`: `body-parser@1`,
+   `follow-redirects`, `systeminformation`, `undici@7`, `@prisma/config → deepmerge-ts ^8`;
+   `sharp` 0.35.5; `nodemailer` ^10 (upstream #3602 ile aynı, `mailchannels.ts` dahil).
+   `@documenso/nodemailer-resend` 5.0.0'da kaldı (6.0.1 npm 7 gün kuralına takıldı; çalışma
+   anında nodemailer'a bağlı değil). Upstream bu sürümleri yakalayınca override'lar silinebilir.
 
 Lisans: AGPL-3.0 (upstream) — bu depo herkese açık kaynak olarak durur (canlı imajın kaynağı).
 
@@ -36,7 +43,11 @@ Lisans: AGPL-3.0 (upstream) — bu depo herkese açık kaynak olarak durur (canl
   Supabase) → **yalnız `documenso` servisine dokun**, her zaman `--no-deps`.
 - `.env`: Documenso ayarları. `NEXT_PUBLIC_DISABLE_SIGNUP=true` — hesap açma kapalı; imza
   tamamlandı sayfasındaki "hesap aç" paneli görünmez (yedek: `.env.bak-2026-10-16-pre-disable-signup`).
-- Canlı (2026-10-16, v2.20.0): `ghcr.io/makturk/documenso:atlas-e7e87154b6f3` (`?lang` yönlendirmede
+- Canlı (2026-11-14, v2.20.0): `ghcr.io/makturk/documenso:atlas-4790c293c596` (trivy sertleştirmesi,
+  madde 6; göç yok → geri dönüş doğrudan `atlas-e7e87154b6f3`, yedek `compose.yml.bak-imgupd-2026-11-14-pre-documenso`).
+  DB `postgres:15.20-trixie` (15.19'dan; yedek `/opt/atlas/backup/tools/documenso-db-2026-11-14-pre-pg15.20.dump`,
+  `compose.yml.bak-imgupd-2026-11-14`). Kutu: 144.76.18.83.
+- Önceki canlı (2026-10-16, v2.20.0): `ghcr.io/makturk/documenso:atlas-e7e87154b6f3` (`?lang` yönlendirmede
   korunur; göç yok → geri dönüş doğrudan `atlas-f7139de41f00`, yedek `compose.yml.bak-2026-10-16-pre-lang-redirect`).
   v2.20.0'a ilk geçiş `atlas-f7139de41f00` ile — 2 göç uygulandı. Önceki: `atlas-b85c01246f17` (v2.16.0; yalnız göç öncesi yedekle geri dönülür:
   `/root/documenso-2026-10-16-pre-v2.20.0.dump`, `compose.yml.bak-2026-10-16-pre-v2.20.0`).

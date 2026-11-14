@@ -3,6 +3,8 @@
 ###########################
 FROM node:24-alpine3.23 AS base
 
+# Atlas: taban imajdaki Alpine paketlerini derleme anında güncelle (trivy: musl, zlib, libexpat, brotli…).
+RUN apk upgrade --no-cache
 RUN apk add --no-cache openssl
 RUN apk add --no-cache font-freefont
 
@@ -144,6 +146,14 @@ COPY --from=installer --chown=nodejs:nodejs /app/packages/prisma/migrations ./pa
 # Generate the prisma client again, this time only targeting the client generator
 RUN npx prisma generate --schema ./packages/prisma/schema.prisma --generator client \
     && npm cache clean --force
+
+# Atlas: çalışma anında npm/npx/corepack kullanılmıyor (start.sh prisma'yı node_modules/.bin'den
+# çağırır). Taban node imajındaki global npm'in kendi bağımlılıkları (undici, brace-expansion…)
+# trivy'de yüksek açık çıkarıyordu → runner'dan silinir.
+USER root
+RUN rm -rf /usr/local/lib/node_modules/npm /usr/local/lib/node_modules/corepack \
+    /usr/local/bin/npm /usr/local/bin/npx /usr/local/bin/corepack /home/nodejs/.npm
+USER nodejs
 
 
 # Get the start script from docker/

@@ -28,7 +28,7 @@ printf "👥 Community: https://github.com/documenso/documenso\n\n"
 export NEXT_PRIVATE_DIRECT_DATABASE_URL="${NEXT_PRIVATE_DIRECT_DATABASE_URL:-$NEXT_PRIVATE_DATABASE_URL}"
 
 printf "🗄️  Running database migrations...\n"
-npx prisma migrate deploy --schema ../../packages/prisma/schema.prisma
+../../node_modules/.bin/prisma migrate deploy --schema ../../packages/prisma/schema.prisma
 
 printf "🌟 Starting Documenso server...\n"
 HOSTNAME=0.0.0.0 node build/server/main.js
