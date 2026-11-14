@@ -26,6 +26,13 @@ Upstream: documenso/documenso **v2.20.0**. Değişiklikler (`atlas/v2.20.0-tr` d
      açar (sürüm notu özeti, Atlas commit'lerinin yeni sürüme deneme cherry-pick'i, ortak değişen
      dosyalar, yeni veritabanı göçleri, yeni çevrilecek metinler). Elle: Actions → Run workflow.
      Zamanlanmış iş yalnız **varsayılan daldan** koşar → depo varsayılan dalı güncel atlas dalı olmalı.
+6. **İmaj güvenlik sertleştirmesi** (trivy, 2026-11-14): `docker/Dockerfile` taban aşamasında
+   `apk upgrade`; runner aşamasından global npm/npx/corepack silinir (`start.sh` göçü
+   `node_modules/.bin/prisma` ile çalıştırır). Kök `package.json` `overrides`: `body-parser@1`,
+   `follow-redirects`, `systeminformation`, `undici@7`, `@prisma/config → deepmerge-ts ^8`;
+   `sharp` 0.35.5; `nodemailer` ^10 (upstream #3602 ile aynı, `mailchannels.ts` dahil).
+   `@documenso/nodemailer-resend` 5.0.0'da kaldı (6.0.1 npm 7 gün kuralına takıldı; çalışma
+   anında nodemailer'a bağlı değil). Upstream bu sürümleri yakalayınca override'lar silinebilir.
 
 Lisans: AGPL-3.0 (upstream) — bu depo herkese açık kaynak olarak durur (canlı imajın kaynağı).
 
