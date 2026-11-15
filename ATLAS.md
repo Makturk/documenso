@@ -50,16 +50,18 @@ Lisans: AGPL-3.0 (upstream) — bu depo herkese açık kaynak olarak durur (canl
   Supabase) → **yalnız `documenso` servisine dokun**, her zaman `--no-deps`.
 - `.env`: Documenso ayarları. `NEXT_PUBLIC_DISABLE_SIGNUP=true` — hesap açma kapalı; imza
   tamamlandı sayfasındaki "hesap aç" paneli görünmez (yedek: `.env.bak-2026-10-16-pre-disable-signup`).
-- Canlı (2026-11-14, v2.20.0): `ghcr.io/makturk/documenso:atlas-4790c293c596` (trivy sertleştirmesi,
-  madde 6; göç yok → geri dönüş doğrudan `atlas-e7e87154b6f3`, yedek `compose.yml.bak-imgupd-2026-11-14-pre-documenso`).
-  DB (2026-11-15) `ghcr.io/makturk/documenso:atlas-postgres-15.20-trixie-20261115` (madde 7; yedek
-  `/opt/atlas/backup/tools/documenso-db-2026-11-15-pre-atlas-postgres.dump`, `compose.yml.bak-imgupd-2026-11-15`;
-  geri dönüş `postgres:15.20-trixie`). Önceki: `postgres:15.19-trixie` (yedek
-  `/opt/atlas/backup/tools/documenso-db-2026-11-14-pre-pg15.20.dump`, `compose.yml.bak-imgupd-2026-11-14`).
-  Kutu: 144.76.18.83.
-- Uçtan uca canlı test (2026-11-15, iki kez): Atlas'ın ortak Documenso hesabıyla belge (dil tr,
-  `atlas-sender:` firma adı, `distributionMethod: NONE`) → `/sign/<token>?lang=tr` Türkçe + firma adı →
+- Canlı (2026-11-15, v2.20.0, varsayılan dal `3152607` = #4 + #5): `ghcr.io/makturk/documenso:atlas-3152607d001c`
+  (madde 6; göç yok → geri dönüş doğrudan `atlas-4790c293c596`, daha önce `atlas-e7e87154b6f3`;
+  yedek `compose.yml.bak-imgupd-2026-11-15-pre-3152607`).
+  DB `ghcr.io/makturk/documenso:atlas-postgres-15.20-trixie-20261115-3152607` (madde 7; yedek
+  `/opt/atlas/backup/tools/documenso-db-2026-11-15-pre-3152607.dump`; geri dönüş `postgres:15.20-trixie`, veri uyumlu).
+  Ara adımlar: DB `postgres:15.19-trixie` → `postgres:15.20-trixie` (yedek `…/documenso-db-2026-11-14-pre-pg15.20.dump`,
+  `compose.yml.bak-imgupd-2026-11-14`) → `atlas-postgres-15.20-trixie-20261115` (`…-2026-11-15-pre-atlas-postgres.dump`,
+  `compose.yml.bak-imgupd-2026-11-15`). trivy (düzeltmesi olan kritik/yüksek): iki imaj da 0. Kutu: 144.76.18.83.
+- Uçtan uca canlı test (2026-11-15, her imaj değişiminden sonra, 3 kez): Atlas'ın ortak Documenso hesabıyla belge
+  (dil tr, `atlas-sender:` firma adı, `distributionMethod: NONE`) → `/sign/<token>?lang=tr` Türkçe + firma adı →
   imza → COMPLETED, mühürlü PDF dijital imzası geçerli, sertifika Türkçe, 6 webhook 200 → test belgesi silindi.
+  Ayrıca girişsiz `/admin/users.data` → `/signin` (veri yok), SMTP `verify()` + gerçek gönderim (nodemailer 10).
 - Önceki canlı (2026-10-16, v2.20.0): `ghcr.io/makturk/documenso:atlas-e7e87154b6f3` (`?lang` yönlendirmede
   korunur; göç yok → geri dönüş doğrudan `atlas-f7139de41f00`, yedek `compose.yml.bak-2026-10-16-pre-lang-redirect`).
   v2.20.0'a ilk geçiş `atlas-f7139de41f00` ile — 2 göç uygulandı. Önceki: `atlas-b85c01246f17` (v2.16.0; yalnız göç öncesi yedekle geri dönülür:
