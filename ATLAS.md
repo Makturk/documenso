@@ -33,6 +33,13 @@ Upstream: documenso/documenso **v2.20.0**. Değişiklikler (`atlas/v2.20.0-tr` d
    `sharp` 0.35.5; `nodemailer` ^10 (upstream #3602 ile aynı, `mailchannels.ts` dahil).
    `@documenso/nodemailer-resend` 5.0.0'da kaldı (6.0.1 npm 7 gün kuralına takıldı; çalışma
    anında nodemailer'a bağlı değil). Upstream bu sürümleri yakalayınca override'lar silinebilir.
+7. **Veritabanı imajı** `docker/atlas-postgres/` → `ghcr.io/makturk/documenso:atlas-postgres-<PG_TAG>-<YYYYMMDD>`
+   (iş akışı `atlas-postgres-image.yml`: ilgili yol push'u, her pazartesi, elle). Resmi
+   `postgres:15.x-trixie` + `gosu` aynı sürümün kaynağından güncel Go ile (resmi ikili Go 1.24.6 →
+   trivy 1 kritik/24 yüksek) + Debian paket yükseltmesi (PostgreSQL paketleri sabit). Ana sürüm
+   değişmez; yeni 15.x yamasında iş akışındaki `PG_TAG`'i güncelle. Haftalık derleme canlıya
+   kendiliğinden geçmez: yeni tarihli etiketi tara → `pg_dump` → `compose.yml`'de etiketi değiştir →
+   `docker compose up -d --no-deps database`. Geri dönüş: aynı `PG_TAG`'in resmi imajı (veri uyumlu).
 
 Lisans: AGPL-3.0 (upstream) — bu depo herkese açık kaynak olarak durur (canlı imajın kaynağı).
 
@@ -45,8 +52,14 @@ Lisans: AGPL-3.0 (upstream) — bu depo herkese açık kaynak olarak durur (canl
   tamamlandı sayfasındaki "hesap aç" paneli görünmez (yedek: `.env.bak-2026-10-16-pre-disable-signup`).
 - Canlı (2026-11-14, v2.20.0): `ghcr.io/makturk/documenso:atlas-4790c293c596` (trivy sertleştirmesi,
   madde 6; göç yok → geri dönüş doğrudan `atlas-e7e87154b6f3`, yedek `compose.yml.bak-imgupd-2026-11-14-pre-documenso`).
-  DB `postgres:15.20-trixie` (15.19'dan; yedek `/opt/atlas/backup/tools/documenso-db-2026-11-14-pre-pg15.20.dump`,
-  `compose.yml.bak-imgupd-2026-11-14`). Kutu: 144.76.18.83.
+  DB (2026-11-15) `ghcr.io/makturk/documenso:atlas-postgres-15.20-trixie-20261115` (madde 7; yedek
+  `/opt/atlas/backup/tools/documenso-db-2026-11-15-pre-atlas-postgres.dump`, `compose.yml.bak-imgupd-2026-11-15`;
+  geri dönüş `postgres:15.20-trixie`). Önceki: `postgres:15.19-trixie` (yedek
+  `/opt/atlas/backup/tools/documenso-db-2026-11-14-pre-pg15.20.dump`, `compose.yml.bak-imgupd-2026-11-14`).
+  Kutu: 144.76.18.83.
+- Uçtan uca canlı test (2026-11-15, iki kez): Atlas'ın ortak Documenso hesabıyla belge (dil tr,
+  `atlas-sender:` firma adı, `distributionMethod: NONE`) → `/sign/<token>?lang=tr` Türkçe + firma adı →
+  imza → COMPLETED, mühürlü PDF dijital imzası geçerli, sertifika Türkçe, 6 webhook 200 → test belgesi silindi.
 - Önceki canlı (2026-10-16, v2.20.0): `ghcr.io/makturk/documenso:atlas-e7e87154b6f3` (`?lang` yönlendirmede
   korunur; göç yok → geri dönüş doğrudan `atlas-f7139de41f00`, yedek `compose.yml.bak-2026-10-16-pre-lang-redirect`).
   v2.20.0'a ilk geçiş `atlas-f7139de41f00` ile — 2 göç uygulandı. Önceki: `atlas-b85c01246f17` (v2.16.0; yalnız göç öncesi yedekle geri dönülür:
