@@ -21,11 +21,7 @@ RUN git clone -q --depth 1 -b "$GOSU_REF" https://github.com/tianon/gosu /src \
  && /out/gosu --version
 
 FROM postgres:${PG_TAG}
-RUN set -eux; \
-    apt-mark hold $(dpkg-query -W -f='${binary:Package}\n' 'postgresql-*' 'libpq*' | sed 's/:.*//'); \
-    apt-get update; \
-    DEBIAN_FRONTEND=noninteractive apt-get upgrade -y --no-install-recommends; \
-    apt-mark unhold $(apt-mark showhold); \
-    rm -rf /var/lib/apt/lists/*
+COPY upgrade-os.sh /usr/local/sbin/atlas-upgrade-os.sh
+RUN sh /usr/local/sbin/atlas-upgrade-os.sh && rm /usr/local/sbin/atlas-upgrade-os.sh
 COPY --from=gosu /out/gosu /usr/local/bin/gosu
 RUN set -eux; chmod 0755 /usr/local/bin/gosu; gosu --version; gosu nobody true; postgres --version
