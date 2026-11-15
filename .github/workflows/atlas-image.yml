@@ -7,6 +7,11 @@ name: atlas-image
 on:
   push:
     branches: ['atlas/**']
+    # Yalnız DB imajı / belge değişen push'lar Documenso imajını yeniden derlemesin.
+    paths-ignore:
+      - 'docker/atlas-postgres/**'
+      - '.github/workflows/atlas-postgres-image.yml'
+      - 'ATLAS.md'
   workflow_dispatch:
 
 concurrency:
