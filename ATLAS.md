@@ -33,7 +33,7 @@ Upstream: documenso/documenso **v2.20.0**. Değişiklikler (`atlas/v2.20.0-tr` d
    `sharp` 0.35.5; `nodemailer` ^10 (upstream #3602 ile aynı, `mailchannels.ts` dahil).
    `@documenso/nodemailer-resend` 5.0.0'da kaldı (6.0.1 npm 7 gün kuralına takıldı; çalışma
    anında nodemailer'a bağlı değil). Upstream bu sürümleri yakalayınca override'lar silinebilir.
-7. **Veritabanı imajı** `docker/atlas-postgres/` → `ghcr.io/makturk/documenso:atlas-postgres-<PG_TAG>-<YYYYMMDD>`
+7. **Veritabanı imajı** `docker/atlas-postgres/` → `ghcr.io/makturk/documenso:atlas-postgres-<PG_TAG>-<YYYYMMDD>-<kısa sha>` (ilk derleme `…-20261115` sha'sız)
    (iş akışı `atlas-postgres-image.yml`: ilgili yol push'u, her pazartesi, elle). Resmi
    `postgres:15.x-trixie` + `gosu` aynı sürümün kaynağından güncel Go ile (resmi ikili Go 1.24.6 →
    trivy 1 kritik/24 yüksek) + Debian paket yükseltmesi (PostgreSQL paketleri sabit). Ana sürüm

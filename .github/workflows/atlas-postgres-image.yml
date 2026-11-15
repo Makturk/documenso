@@ -1,6 +1,6 @@
 # Atlas — Documenso veritabanı imajı (docker/atlas-postgres/Dockerfile).
 # Çıktı (herkese açık documenso paketinde, ayrı etiket önekiyle):
-#   ghcr.io/makturk/documenso:atlas-postgres-<PG_TAG>-<YYYYMMDD>   (değişmez; canlıda bu kullanılır)
+#   ghcr.io/makturk/documenso:atlas-postgres-<PG_TAG>-<YYYYMMDD>-<kısa sha>   (değişmez; canlıda bu kullanılır)
 #   ghcr.io/makturk/documenso:atlas-postgres-<PG_TAG>              (son derleme)
 # Haftalık yeniden derleme Debian güvenlik düzeltmelerini ve Go yamalarını toplar
 # (zamanlanmış iş yalnız varsayılan daldan koşar). Canlıya alma elle — ATLAS.md.
@@ -44,7 +44,9 @@ jobs:
 
       - name: Tarih
         id: date
-        run: echo "ymd=$(date -u +%Y%m%d)" >> "$GITHUB_OUTPUT"
+        run: |
+          echo "ymd=$(date -u +%Y%m%d)" >> "$GITHUB_OUTPUT"
+          echo "sha=${GITHUB_SHA::7}" >> "$GITHUB_OUTPUT"
 
       - uses: docker/build-push-action@v6
         with:
@@ -56,5 +58,5 @@ jobs:
           build-args: |
             PG_TAG=${{ env.PG_TAG }}
           tags: |
-            ghcr.io/makturk/documenso:atlas-postgres-${{ env.PG_TAG }}-${{ steps.date.outputs.ymd }}
+            ghcr.io/makturk/documenso:atlas-postgres-${{ env.PG_TAG }}-${{ steps.date.outputs.ymd }}-${{ steps.date.outputs.sha }}
             ghcr.io/makturk/documenso:atlas-postgres-${{ env.PG_TAG }}
